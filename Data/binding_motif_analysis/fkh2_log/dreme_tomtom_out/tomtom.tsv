@@ -1,0 +1,12 @@
+Query_ID	Target_ID	Optimal_offset	p-value	E-value	q-value	Overlap	Query_consensus	Target_consensus	Orientation
+GTMAAC	Fkh2p&consensus=gtaaaca	0	0.000327928	0.240044	0.1762	6	GTAAAC	GTAAACA	+
+GTMAAC	Fkh1p&consensus=GTMAACAA	0	0.000361732	0.264788	0.1762	6	GTAAAC	GTAAACAA	+
+GTMAAC	Fkh2p&consensus=GTMAACAA	0	0.000361732	0.264788	0.1762	6	GTAAAC	GTAAACAA	+
+GTMAAC	Fkh1p&consensus=gtaaAcAaa	0	0.000655749	0.480009	0.239563	6	GTAAAC	GTAAACAAA	+
+AAAGRTA	Mot3p&consensus=AAGGKA	-1	0.00114793	0.840287	0.840287	6	AAAGGTA	AAGGTA	+
+AAAGRTA	Mot3p&consensus=WAGGTA	-1	0.00114793	0.840287	0.840287	6	AAAGGTA	AAGGTA	+
+CGSCAAAA	Eds1p&consensus=cGGAAaAAt	0	0.0010868	0.795539	0.357484	8	CGCCAAAA	CGGAAAAAT	+
+
+# Tomtom (Motif Comparison Tool): Version 5.0.2 compiled on Aug 31 2018 at 01:15:19
+# The format of this file is described at http://meme-suite.org//doc/tomtom-output-format.html.
+# tomtom -verbosity 1 -oc dreme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme

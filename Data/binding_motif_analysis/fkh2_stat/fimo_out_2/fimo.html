@@ -1,0 +1,797 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:cis="http://zlab.bu.edu/schema/cisml" xmlns:fimo="http://noble.gs.washington.edu/schema/cisml" xmlns:mem="http://noble.gs.washington.edu/meme">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>FIMO Results</title>
+<style type="text/css">
+td.left {text-align: left;}
+td.right {text-align: right; padding-right: 1cm;}
+</style>
+</head>
+<body color="#000000">
+<a name="top_buttons"></a>
+<hr>
+<table summary="buttons" align="left" cellspacing="0">
+<tr>
+<td bgcolor="#00FFFF"><a href="#database_and_motifs"><b>Database and Motifs</b></a></td>
+<td bgcolor="#DDFFDD"><a href="#sec_i"><b>High-scoring Motif Occurences</b></a></td>
+<td bgcolor="#DDDDFF"><a href="#debugging_information"><b>Debugging Information</b></a></td>
+<td bgcolor="#FFDD00"><a href="fimo.tsv""><b>Results in TSV Format</b></a></td>
+<td bgcolor="#FFDDFF"><a href="fimo.gff""><b>Results in GFF3 Format</b></a></td>
+</tr>
+</table>
+<br/>
+<br/>
+<hr/>
+<center><big><b>FIMO - Motif search tool</b></big></center>
+<hr>
+<p>
+FIMO version 5.0.2, (Release date: Thu Aug 30 14:26:08 2018 -0700)
+</p>
+<p>
+For further information on how to interpret these results please access <a href="http://meme-suite.org//doc/fimo-output-format.html">http://meme-suite.org//doc/fimo-output-format.html</a>.<br>
+To get a copy of the FIMO software please access <a href="http://meme-suite.org">http://meme-suite.org</a>
+
+</p>
+<p>If you use FIMO in your research, please cite the following paper:<br>
+Charles E. Grant, Timothy L. Bailey, and William Stafford Noble,
+"FIMO: Scanning for occurrences of a given motif",
+<i>Bioinformatics</i>, <b>27</b>(7):1017-1018, 2011.
+<a href="http://bioinformatics.oxfordjournals.org/content/27/7/1017">[full text]</a></p>
+<hr>
+<center><big><b><a name="database_and_motifs">DATABASE AND MOTIFS</a></b></big></center>
+<hr>
+<div style="padding-left: 0.75in; line-height: 1em; font-family: monospace;">
+<p>
+  DATABASE ./Fkh2_stat_peaks.fasta
+  <br />
+  Database contains 414 sequences, 207414 residues
+</p>
+<p>
+  MOTIFS meme_out/meme.xml (DNA)
+  <table>
+    <thead>
+      <tr>
+        <th style="border-bottom: 1px dashed;">MOTIF</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;">WIDTH</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;text-align:left;" >
+         BEST POSSIBLE MATCH
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:right;">GRAAAADRTAAACAA</td>
+        <td style="text-align:right;padding-left: 1em;">15</td>
+        <td style="text-align:left;padding-left: 1em;">GAAAAAAGTAAACAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+        <td style="text-align:right;padding-left: 1em;">30</td>
+        <td style="text-align:left;padding-left: 1em;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">SRDRARRVRAARAMMHRVAAA</td>
+        <td style="text-align:right;padding-left: 1em;">21</td>
+        <td style="text-align:left;padding-left: 1em;">CAAAAGAGAAAAAAAAGGAAA</td>
+       </tr>
+    </tbody>
+  </table>
+</p>
+<p>
+Random model letter frequencies (./background):
+<br/>
+
+A 0.313 C 0.187 G 0.187 T 0.313 </p>
+</div>
+<hr>
+<center><big><b><a name="sec_i">SECTION I: HIGH-SCORING MOTIF OCCURENCES</a></b></big></center>
+<hr>
+<ul>
+<li>
+There were 55 motif occurences with a p-value less than 0.0001.
+
+The full set of motif occurences can be seen in the
+TSV (tab-delimited values) output file
+<a href="fimo.tsv">fimo.tsv</a>, 
+the GFF3 file 
+<a href="fimo.gff">fimo.gff</a> 
+which may be suitable for uploading to the 
+<a href="http://genome.ucsc.edu/cgi-bin/hgTables">UCSC Genome Table Browser</a>
+(assuming the FASTA input sequences included genomic coordinates in UCSC or Galaxy format),
+or the XML file 
+<a href="fimo.xml">fimo.xml</a>.
+</li>
+<li>
+The <i>p</i>-value of a motif occurrence is defined as the
+probability of a random sequence of the same length as the motif
+matching that position of the sequence with as good or better a score.
+</li>
+<li>
+The score for the match of a position in a sequence to a motif
+is computed by summing the appropriate entries from each column of
+the position-dependent scoring matrix that represents the motif.
+</li>
+<li>
+The q-value of a motif occurrence is defined as the
+false discovery rate if the occurrence is accepted as significant.
+</li>
+<li>The table is sorted by increasing <i>p</i>-value.</li>
+</ul>
+<table border="1">
+<thead>
+<tr>
+<th>Motif ID</th>
+<th>Alt ID</th>
+<th>Sequence Name</th>
+<th>Strand</th>
+<th>Start</th>
+<th>End</th>
+<th>p-value</th>
+<th>q-value</th>
+<th>Matched Sequence</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797342__797352__YOR246C__ENV9__1.43697478991597__TTACATTTT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">47</td>
+      <td style="text-align:left;">76</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797342__797352__YOR248W__YOR248W__1.43697478991597__TTACATTTT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">47</td>
+      <td style="text-align:left;">76</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797342__797352__YOR247W__SRL1__1.43697478991597__TTACATTTT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">47</td>
+      <td style="text-align:left;">76</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797119__797169__YOR248W__0.00159609321286</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">250</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797119__797169__YOR246C__0.00159609321286</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">250</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797119__797169__YOR247W__0.00159609321286</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">250</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797126__797136__YOR247W__4.05194805194805</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">263</td>
+      <td style="text-align:left;">292</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797126__797136__YOR246C__4.05194805194805</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">263</td>
+      <td style="text-align:left;">292</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797126__797136__YOR248W__4.05194805194805</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">263</td>
+      <td style="text-align:left;">292</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797121__797131__YOR248W__YOR248W__11.8821917808219__TTTTGGCGTTTCGTGTTGTTGACA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">268</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797121__797131__YOR246C__ENV9__11.8821917808219__TTTTGGCGTTTCGTGTTGTTGACA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">268</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__797121__797131__YOR247W__SRL1__11.8821917808219__TTTTGGCGTTTCGTGTTGTTGACA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">268</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">3.23e-19</td>
+      <td style="text-align:left;">1.05e-14</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIX__249203__249238__YIL056W__0.00155980205802</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">214</td>
+      <td style="text-align:left;">243</td>
+      <td style="text-align:left;">1.26e-13</td>
+      <td style="text-align:left;">3.07e-09</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGACACAAGAGTCATTCGTTATGCACGGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIX__249203__249238__YIL057C__0.00155980205802</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">214</td>
+      <td style="text-align:left;">243</td>
+      <td style="text-align:left;">1.26e-13</td>
+      <td style="text-align:left;">3.07e-09</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGACACAAGAGTCATTCGTTATGCACGGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIX__249185__249195__YIL056W__VHR1__2.0353982300885__--------</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">244</td>
+      <td style="text-align:left;">273</td>
+      <td style="text-align:left;">1.26e-13</td>
+      <td style="text-align:left;">3.07e-09</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGACACAAGAGTCATTCGTTATGCACGGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIX__249185__249195__YIL057C__RGI2__2.0353982300885__--------</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">244</td>
+      <td style="text-align:left;">273</td>
+      <td style="text-align:left;">1.26e-13</td>
+      <td style="text-align:left;">3.07e-09</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGACACAAGAGTCATTCGTTATGCACGGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__904069__904079__YOR315W__SFG1__9.69656488549618__TTTCCTTGT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">463</td>
+      <td style="text-align:left;">492</td>
+      <td style="text-align:left;">7.48e-06</td>
+      <td style="text-align:left;">0.135</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCGTTATAGACAGCAGTAATGCATGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__904069__904079__YOR314W-A__YOR314W-A__9.69656488549618__TTTCCTTGT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">463</td>
+      <td style="text-align:left;">492</td>
+      <td style="text-align:left;">7.48e-06</td>
+      <td style="text-align:left;">0.135</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCGTTATAGACAGCAGTAATGCATGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__904067__904077__YOR315W__5.1038961038961</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">465</td>
+      <td style="text-align:left;">494</td>
+      <td style="text-align:left;">7.48e-06</td>
+      <td style="text-align:left;">0.135</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCGTTATAGACAGCAGTAATGCATGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__904067__904077__YOR314W-A__5.1038961038961</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">465</td>
+      <td style="text-align:left;">494</td>
+      <td style="text-align:left;">7.48e-06</td>
+      <td style="text-align:left;">0.135</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCGTTATAGACAGCAGTAATGCATGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXIII__804583__804593__YMR268C__1.31168831168831</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">44</td>
+      <td style="text-align:left;">73</td>
+      <td style="text-align:left;">7.58e-06</td>
+      <td style="text-align:left;">0.135</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTCTACAATTCATTGTCATGATGTACATAG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrV__94613__94683__YEL030W__0.000668086698108</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">324</td>
+      <td style="text-align:left;">353</td>
+      <td style="text-align:left;">7.58e-06</td>
+      <td style="text-align:left;">0.135</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGATGCAGTTATCGGTATTGATTTAGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVII__703019__703029__YGR108W__CLB1__5.17509727626459__TTTCCTCT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">102</td>
+      <td style="text-align:left;">131</td>
+      <td style="text-align:left;">1.19e-05</td>
+      <td style="text-align:left;">0.193</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATGCCCAGTGTCATTCTTGAAGCAGGCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVII__702901__702911__YGR108W__1.4025974025974</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">220</td>
+      <td style="text-align:left;">249</td>
+      <td style="text-align:left;">1.19e-05</td>
+      <td style="text-align:left;">0.193</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATGCCCAGTGTCATTCTTGAAGCAGGCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIII__74375__74385__YCL026C-B__HBN1__1.55294117647059__TTTTTCTT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">158</td>
+      <td style="text-align:left;">187</td>
+      <td style="text-align:left;">1.49e-05</td>
+      <td style="text-align:left;">0.224</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCAATAGTGCTGTTCGTTATTGATGTTA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIII__74347__74357__YCL026C-B__1.02597402597403</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">186</td>
+      <td style="text-align:left;">215</td>
+      <td style="text-align:left;">1.49e-05</td>
+      <td style="text-align:left;">0.224</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCAATAGTGCTGTTCGTTATTGATGTTA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVIII__105486__105541__YHR001W__0.00222900488727</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">193</td>
+      <td style="text-align:left;">222</td>
+      <td style="text-align:left;">2.34e-05</td>
+      <td style="text-align:left;">0.315</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGGCAAGAGATTTGGGCTTGAGGAAGCGAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVIII__105496__105506__YHR001W__OSH7__2.65889212827988__TGTTGACA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">206</td>
+      <td style="text-align:left;">235</td>
+      <td style="text-align:left;">2.34e-05</td>
+      <td style="text-align:left;">0.315</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGGCAAGAGATTTGGGCTTGAGGAAGCGAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVIII__105485__105495__YHR001W__2.41558441558442</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">217</td>
+      <td style="text-align:left;">246</td>
+      <td style="text-align:left;">2.34e-05</td>
+      <td style="text-align:left;">0.315</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGGCAAGAGATTTGGGCTTGAGGAAGCGAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrII__686286__686296__YBR235W__1.23376623376623</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">112</td>
+      <td style="text-align:left;">141</td>
+      <td style="text-align:left;">3.34e-05</td>
+      <td style="text-align:left;">0.435</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CACGAGAATAATTGGTGGGTATCCAAGCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXIII__445461__445506__YMR088C__0.000736115142985</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">28</td>
+      <td style="text-align:left;">57</td>
+      <td style="text-align:left;">4.49e-05</td>
+      <td style="text-align:left;">0.528</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGACAATAAACGTAGGTCATCTTAAGGGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__678355__678365__YOR183W__1.23376623376623</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">344</td>
+      <td style="text-align:left;">373</td>
+      <td style="text-align:left;">4.49e-05</td>
+      <td style="text-align:left;">0.528</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTAAAAAATTAGCGTCTGCGTTGCAGTAAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__678313__678323__YOR183W__FYV12__1.59550561797753__GTTTTTTC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">386</td>
+      <td style="text-align:left;">415</td>
+      <td style="text-align:left;">4.49e-05</td>
+      <td style="text-align:left;">0.528</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTAAAAAATTAGCGTCTGCGTTGCAGTAAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVII__381813__381823__YGL065C__1.1038961038961</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">180</td>
+      <td style="text-align:left;">209</td>
+      <td style="text-align:left;">4.59e-05</td>
+      <td style="text-align:left;">0.528</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATGCAAAGACTTGTTACTGGGTGCGGTAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__580012__580022__YOR136W__1.12987012987013</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">70</td>
+      <td style="text-align:left;">99</td>
+      <td style="text-align:left;">4.97e-05</td>
+      <td style="text-align:left;">0.539</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGAAGAAATTGTCGTTGCCCCGCCAGGGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXV__579743__579828__YOR136W__0.00396005696741</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">301</td>
+      <td style="text-align:left;">330</td>
+      <td style="text-align:left;">4.97e-05</td>
+      <td style="text-align:left;">0.539</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGAAGAAATTGTCGTTGCCCCGCCAGGGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXIV__420758__420768__YNL108C__1.55844155844156</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">268</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">5.78e-05</td>
+      <td style="text-align:left;">0.55</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGAAAATACCGTTGTTCCGGGTGCAGTGAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXIV__420742__420756__YNL108C__0.00223669880697</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">282</td>
+      <td style="text-align:left;">311</td>
+      <td style="text-align:left;">5.78e-05</td>
+      <td style="text-align:left;">0.55</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGAAAATACCGTTGTTCCGGGTGCAGTGAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrV__455741__455751__YER143W__1.16883116883117</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">198</td>
+      <td style="text-align:left;">227</td>
+      <td style="text-align:left;">5.84e-05</td>
+      <td style="text-align:left;">0.55</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGCAAGGGTTGTCAGTCTTTATGGCGGTGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrV__455649__455659__YER143W__DDI1__1.38211382113821__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">290</td>
+      <td style="text-align:left;">319</td>
+      <td style="text-align:left;">5.84e-05</td>
+      <td style="text-align:left;">0.55</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGCAAGGGTTGTCAGTCTTTATGGCGGTGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIX__100266__100276__YIL133C__1.36363636363636</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">162</td>
+      <td style="text-align:left;">191</td>
+      <td style="text-align:left;">5.91e-05</td>
+      <td style="text-align:left;">0.55</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCCAAAGAGGCACTGAAGACGCTGTGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIX__100255__100265__YIL133C__RPL16A__1.4__TAGTAGTT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">173</td>
+      <td style="text-align:left;">202</td>
+      <td style="text-align:left;">5.91e-05</td>
+      <td style="text-align:left;">0.55</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCCAAAGAGGCACTGAAGACGCTGTGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVIII__56148__56158__YHL024W__RIM4__4.34402332361516__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">113</td>
+      <td style="text-align:left;">142</td>
+      <td style="text-align:left;">8.19e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAACCAACGAATGAATTGTTTTGCAGGCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrVIII__55989__55999__YHL024W__2.02597402597403</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">272</td>
+      <td style="text-align:left;">301</td>
+      <td style="text-align:left;">8.19e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAACCAACGAATGAATTGTTTTGCAGGCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrX__123365__123375__YJL158C__1.71428571428571</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">41</td>
+      <td style="text-align:left;">70</td>
+      <td style="text-align:left;">8.23e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAAAAATTCGCGCCGATTTAAGCTA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrX__123141__123151__YJL158C__CIS3__1.65191740412979__TTATTTTT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">265</td>
+      <td style="text-align:left;">294</td>
+      <td style="text-align:left;">8.23e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGCCAAAAAAATTCGCGCCGATTTAAGCTA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIV__191199__191209__YDL148C__1.33766233766234</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">134</td>
+      <td style="text-align:left;">163</td>
+      <td style="text-align:left;">8.72e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGAAAGAAGTTTTGGCCAAGATTGTAGATC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIV__191066__191092__YDL148C__0.00179643910326</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">259</td>
+      <td style="text-align:left;">288</td>
+      <td style="text-align:left;">8.72e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CGAAAGAAGTTTTGGCCAAGATTGTAGATC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXVI__329309__329319__YPL116W__HOS3__2.16964285714286__GTTGTTTAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">322</td>
+      <td style="text-align:left;">9.51e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACAAAAAATAGTTCTTCATGTTTAAAGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXVI__329309__329319__YPL117C__IDI1__2.16964285714286__GTTGTTTAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">322</td>
+      <td style="text-align:left;">9.51e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACAAAAAATAGTTCTTCATGTTTAAAGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXVI__329288__329333__YPL117C__0.00490774499786</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">326</td>
+      <td style="text-align:left;">9.51e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACAAAAAATAGTTCTTCATGTTTAAAGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXVI__329288__329333__YPL116W__0.00490774499786</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">326</td>
+      <td style="text-align:left;">9.51e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACAAAAAATAGTTCTTCATGTTTAAAGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXVI__329291__329301__YPL117C__2.24675324675325</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">311</td>
+      <td style="text-align:left;">340</td>
+      <td style="text-align:left;">9.51e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACAAAAAATAGTTCTTCATGTTTAAAGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrXVI__329291__329301__YPL116W__2.24675324675325</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">311</td>
+      <td style="text-align:left;">340</td>
+      <td style="text-align:left;">9.51e-05</td>
+      <td style="text-align:left;">0.688</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACAAAAAATAGTTCTTCATGTTTAAAGGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CGCCAAAATTCTTGGCCCTGATTCAGGTAC</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">chrIV__1319164__1319174__YDR425W__SNX41__1.42028985507246__TCCTTTTT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">432</td>
+      <td style="text-align:left;">461</td>
+      <td style="text-align:left;">9.76e-05</td>
+      <td style="text-align:left;">0.693</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTCTTCAATAGTTAATCGATAATCAATTAC</td>
+   </tr>
+</tbody>
+</table>
+
+<hr>
+<center><big><b><a name="debugging_information">DEBUGGING INFORMATION</a></b></big></center>
+<hr>
+<p>
+Command line:
+</p>
+<pre>
+fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_2 --bgfile ./background --motif CGCCAAAATTCTTGGCCCTGATTCAGGTAC meme_out/meme.xml ./Fkh2_stat_peaks.fasta
+</pre>
+<p>
+Settings:
+</p>
+<pre>
+<table>
+  <tr>
+    <td style="padding-right: 2em">output_directory = fimo_out_2</td>
+    <td style="padding-left: 5em; padding-right: 2em">MEME file name = meme_out/meme.xml</td>
+    <td style="padding-left: 5em; padding-right: 2em">sequence file name = ./Fkh2_stat_peaks.fasta</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">background file name = ./background</td>
+    <td style="padding-left: 5em; padding-right: 2em">alphabet = DNA</td>
+    <td style="padding-left: 5em; padding-right: 2em">max stored scores = 100000</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">allow clobber = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">compute q-values = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">parse genomic coord. = true</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">text only = false</td>
+    <td style="padding-left: 5em; padding-right: 2em">scan both strands = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">max strand = false</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">threshold type = p-value</td>
+    <td style="padding-left: 5em; padding-right: 2em">output theshold = 0.0001</td>
+    <td style="padding-left: 5em; padding-right: 2em">pseudocount = 0.1</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">alpha = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em">verbosity = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em"></td>
+  </tr>
+
+</table>
+</pre>
+<p>
+This information can be useful in the event you wish to report a
+problem with the FIMO software.
+</p>
+<hr>
+<span style="background-color: #DDDDFF"><a href="#top_buttons"><b>Go to top</b></a></span>
+</body>
+</html>

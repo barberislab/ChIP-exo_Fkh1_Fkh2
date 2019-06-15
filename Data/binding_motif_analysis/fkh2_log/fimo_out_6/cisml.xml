@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_6 --bgfile ./background --motif Fkh1p&amp;consensus=RYMAAYA db/YEAST/YEASTRACT_20130918.meme ./Fkh2_log_peaks.fasta</command-line>
+<pattern-file>db/YEAST/YEASTRACT_20130918.meme</pattern-file>
+<sequence-file>./Fkh2_log_peaks.fasta</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="Fkh1p&amp;consensus=RYMAAYA" name="Fkh1p">
+<scanned-sequence accession="chrVIII__328961__329062__YHR107C__0.000316174396418" name="chrVIII__328961__329062__YHR107C__0.000316174396418">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__328351__328361__YHR107C__1.06" name="chrVIII__328351__328361__YHR107C__1.06">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__483564__483630__YGL008C__0.000586633422606" name="chrVII__483564__483630__YGL008C__0.000586633422606">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__483579__483589__YGL008C__PMA1__7.21527777777778__--------" name="chrVII__483579__483589__YGL008C__PMA1__7.21527777777778__--------">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__483590__483600__YGL008C__5.1" name="chrVII__483590__483600__YGL008C__5.1">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__483564__483630__YGL007C-A__0.000586633422606" name="chrVII__483564__483630__YGL007C-A__0.000586633422606">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__483579__483589__YGL007C-A__YGL007C-A__7.21527777777778__--------" name="chrVII__483579__483589__YGL007C-A__YGL007C-A__7.21527777777778__--------">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__483590__483600__YGL007C-A__5.1" name="chrVII__483590__483600__YGL007C-A__5.1">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__601306__601370__YGR056W__0.000705225923678" name="chrVII__601306__601370__YGR056W__0.000705225923678">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__601146__601156__YGR056W__1.44" name="chrVII__601146__601156__YGR056W__1.44">
+</scanned-sequence>
+<scanned-sequence accession="chrI__139122__139154__YAL007C__0.000764192595649" name="chrI__139122__139154__YAL007C__0.000764192595649">
+</scanned-sequence>
+<scanned-sequence accession="chrI__138423__138433__YAL007C__1.46" name="chrI__138423__138433__YAL007C__1.46">
+</scanned-sequence>
+<scanned-sequence accession="chrI__139122__139154__tP(UGG)A__0.000764192595649" name="chrI__139122__139154__tP(UGG)A__0.000764192595649">
+</scanned-sequence>
+<scanned-sequence accession="chrI__138423__138433__tP(UGG)A__1.46" name="chrI__138423__138433__tP(UGG)A__1.46">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__774503__774532__YGR143W__0.00109793688225" name="chrVII__774503__774532__YGR143W__0.00109793688225">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__774321__774331__YGR143W__1.04" name="chrVII__774321__774331__YGR143W__1.04">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797119__797161__YOR246C__0.00111413012229" name="chrXV__797119__797161__YOR246C__0.00111413012229">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797121__797131__YOR246C__ENV9__9.08588957055215__TTTTGGCGTTTCGTGTTGTTGACA" name="chrXV__797121__797131__YOR246C__ENV9__9.08588957055215__TTTTGGCGTTTCGTGTTGTTGACA">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797133__797143__YOR246C__2.66" name="chrXV__797133__797143__YOR246C__2.66">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797119__797161__YOR247W__0.00111413012229" name="chrXV__797119__797161__YOR247W__0.00111413012229">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797121__797131__YOR247W__SRL1__9.08588957055215__TTTTGGCGTTTCGTGTTGTTGACA" name="chrXV__797121__797131__YOR247W__SRL1__9.08588957055215__TTTTGGCGTTTCGTGTTGTTGACA">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797133__797143__YOR247W__2.66" name="chrXV__797133__797143__YOR247W__2.66">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797119__797161__YOR248W__0.00111413012229" name="chrXV__797119__797161__YOR248W__0.00111413012229">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797121__797131__YOR248W__YOR248W__9.08588957055215__TTTTGGCGTTTCGTGTTGTTGACA" name="chrXV__797121__797131__YOR248W__YOR248W__9.08588957055215__TTTTGGCGTTTCGTGTTGTTGACA">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__797133__797143__YOR248W__2.66" name="chrXV__797133__797143__YOR248W__2.66">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__770983__771054__YPR119W__0.00212803270727" name="chrXVI__770983__771054__YPR119W__0.00212803270727">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__770969__770979__YPR119W__CLB2__4.94339622641509__--------" name="chrXVI__770969__770979__YPR119W__CLB2__4.94339622641509__--------">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__770955__770965__YPR119W__2.16" name="chrXVI__770955__770965__YPR119W__2.16">
+</scanned-sequence>
+<scanned-sequence accession="chrX__598552__598562__YJR091C__JSN1__6__--------" name="chrX__598552__598562__YJR091C__JSN1__6__--------">
+</scanned-sequence>
+<scanned-sequence accession="chrX__598781__598791__YJR091C__JSN1__1.83892617449664__TGTTTGTTCCAT" name="chrX__598781__598791__YJR091C__JSN1__1.83892617449664__TGTTTGTTCCAT">
+</scanned-sequence>
+<scanned-sequence accession="chrX__598867__598877__YJR091C__2.42" name="chrX__598867__598877__YJR091C__2.42">
+</scanned-sequence>
+<scanned-sequence accession="chrX__598552__598562__YJR092W__BUD4__6__--------" name="chrX__598552__598562__YJR092W__BUD4__6__--------">
+</scanned-sequence>
+<scanned-sequence accession="chrX__598552__598562__YJR092W__1.78" name="chrX__598552__598562__YJR092W__1.78">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__436577__436587__YOR058C__ASE1__5.2093023255814__TTTACCTTTT" name="chrXV__436577__436587__YOR058C__ASE1__5.2093023255814__TTTACCTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__436679__436689__YOR058C__3.12" name="chrXV__436679__436689__YOR058C__3.12">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__401198__401208__YHR151C__MTC6__4.77358490566038__GTTTACAT" name="chrVIII__401198__401208__YHR151C__MTC6__4.77358490566038__GTTTACAT">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__401213__401223__YHR151C__2.18" name="chrVIII__401213__401223__YHR151C__2.18">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__401198__401208__YHR152W__SPO12__4.77358490566038__GTTTACAT" name="chrVIII__401198__401208__YHR152W__SPO12__4.77358490566038__GTTTACAT">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__401213__401223__YHR152W__2.18" name="chrVIII__401213__401223__YHR152W__2.18">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__407172__407182__YLR131C__ACE2__1.93989071038251__CAATGTTT" name="chrXII__407172__407182__YLR131C__ACE2__1.93989071038251__CAATGTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__406919__406929__YLR131C__ACE2__3.74285714285714__AACTGTTG" name="chrXII__406919__406929__YLR131C__ACE2__3.74285714285714__AACTGTTG">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__407159__407169__YLR131C__4.36" name="chrXII__407159__407169__YLR131C__4.36">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__289526__289536__YGL116W__CDC20__3.06134969325153__--------" name="chrVII__289526__289536__YGL116W__CDC20__3.06134969325153__--------">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__289499__289509__YGL116W__1.68" name="chrVII__289499__289509__YGL116W__1.68">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__346165__346175__YGL086W__MAD1__2.75167785234899__TGTTTTTT" name="chrVII__346165__346175__YGL086W__MAD1__2.75167785234899__TGTTTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__346152__346162__YGL086W__1.42" name="chrVII__346152__346162__YGL086W__1.42">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__751041__751051__YDR146C__SWI5__2.42424242424242__TTGTTTACCTTTT" name="chrIV__751041__751051__YDR146C__SWI5__2.42424242424242__TTGTTTACCTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__750806__750816__YDR146C__1.7" name="chrIV__750806__750816__YDR146C__1.7">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__751041__751051__YDR147W__EKI1__2.42424242424242__TTGTTTACCTTTT" name="chrIV__751041__751051__YDR147W__EKI1__2.42424242424242__TTGTTTACCTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__750806__750816__YDR147W__1.7" name="chrIV__750806__750816__YDR147W__1.7">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__904069__904079__YOR314W-A__YOR314W-A__2.30978260869565__TTTCCTTGT" name="chrXV__904069__904079__YOR314W-A__YOR314W-A__2.30978260869565__TTTCCTTGT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__903936__903946__YOR314W-A__YOR314W-A__1.36516853932584__TGTTTTTT" name="chrXV__903936__903946__YOR314W-A__YOR314W-A__1.36516853932584__TGTTTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__903869__903879__YOR314W-A__1.4" name="chrXV__903869__903879__YOR314W-A__1.4">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__904069__904079__YOR315W__SFG1__2.30978260869565__TTTCCTTGT" name="chrXV__904069__904079__YOR315W__SFG1__2.30978260869565__TTTCCTTGT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__903936__903946__YOR315W__SFG1__1.36516853932584__TGTTTTTT" name="chrXV__903936__903946__YOR315W__SFG1__1.36516853932584__TGTTTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__903869__903879__YOR315W__1.4" name="chrXV__903869__903879__YOR315W__1.4">
+</scanned-sequence>
+<scanned-sequence accession="chrXI__84318__84328__YKL189W__HYM1__2.23880597014925__TTTATTTTT" name="chrXI__84318__84328__YKL189W__HYM1__2.23880597014925__TTTATTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXI__84201__84211__YKL189W__1.02" name="chrXI__84201__84211__YKL189W__1.02">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__703019__703029__YGR108W__CLB1__2.16450216450216__TTTCCTCT" name="chrVII__703019__703029__YGR108W__CLB1__2.16450216450216__TTTCCTCT">
+</scanned-sequence>
+<scanned-sequence accession="chrVII__703084__703094__YGR108W__2.16" name="chrVII__703084__703094__YGR108W__2.16">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__594293__594303__YOR142W-B__YOR142W-B__2.10687022900763__TTATTTTT" name="chrXV__594293__594303__YOR142W-B__YOR142W-B__2.10687022900763__TTATTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__594411__594421__YOR142W-B__1.92" name="chrXV__594411__594421__YOR142W-B__1.92">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__594293__594303__YOR142W-A__YOR142W-A__2.10687022900763__TTATTTTT" name="chrXV__594293__594303__YOR142W-A__YOR142W-A__2.10687022900763__TTATTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__594411__594421__YOR142W-A__1.92" name="chrXV__594411__594421__YOR142W-A__1.92">
+</scanned-sequence>
+<scanned-sequence accession="chrX__123593__123603__YJL158C__CIS3__2.08860759493671__GTTGTTTA" name="chrX__123593__123603__YJL158C__CIS3__2.08860759493671__GTTGTTTA">
+</scanned-sequence>
+<scanned-sequence accession="chrX__123465__123475__YJL158C__1.48" name="chrX__123465__123475__YJL158C__1.48">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__556121__556131__YPR001W__CIT3__2.0625__TTTATTTTT" name="chrXVI__556121__556131__YPR001W__CIT3__2.0625__TTTATTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__555461__555471__YPR001W__2.1" name="chrXVI__555461__555471__YPR001W__2.1">
+</scanned-sequence>
+<scanned-sequence accession="chrXIII__170290__170300__YML053C__YML053C__2.03333333333333__GCTTGTTTGTT" name="chrXIII__170290__170300__YML053C__YML053C__2.03333333333333__GCTTGTTTGTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXIII__170297__170307__YML053C__1.4" name="chrXIII__170297__170307__YML053C__1.4">
+</scanned-sequence>
+<scanned-sequence accession="chrXIII__170290__170300__YML052W__SUR7__2.03333333333333__GCTTGTTTGTT" name="chrXIII__170290__170300__YML052W__SUR7__2.03333333333333__GCTTGTTTGTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXIII__170297__170307__YML052W__1.4" name="chrXIII__170297__170307__YML052W__1.4">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__1362467__1362477__YDR451C__YHP1__2__GATGTTTA" name="chrIV__1362467__1362477__YDR451C__YHP1__2__GATGTTTA">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__1362333__1362343__YDR451C__1.12" name="chrIV__1362333__1362343__YDR451C__1.12">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__1362467__1362477__YDR452W__PPN1__2__GATGTTTA" name="chrIV__1362467__1362477__YDR452W__PPN1__2__GATGTTTA">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__1362333__1362343__YDR452W__1.12" name="chrIV__1362333__1362343__YDR452W__1.12">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__1403028__1403038__YDR472W__TRS31__2__CTTTTTTT" name="chrIV__1403028__1403038__YDR472W__TRS31__2__CTTTTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__1403267__1403277__YDR472W__1.12" name="chrIV__1403267__1403277__YDR472W__1.12">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__248213__248223__YDL119C__YDL119C__1.968__TCCTTTTT" name="chrIV__248213__248223__YDL119C__YDL119C__1.968__TCCTTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__248252__248262__YDL119C__1.1" name="chrIV__248252__248262__YDL119C__1.1">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__248213__248223__YDL117W__CYK3__1.968__TCCTTTTT" name="chrIV__248213__248223__YDL117W__CYK3__1.968__TCCTTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__248252__248262__YDL117W__1.1" name="chrIV__248252__248262__YDL117W__1.1">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__286500__286510__YPL141C__FRK1__1.875__TTGTTTACAT" name="chrXVI__286500__286510__YPL141C__FRK1__1.875__TTGTTTACAT">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__286301__286311__YPL141C__1.74" name="chrXVI__286301__286311__YPL141C__1.74">
+</scanned-sequence>
+<scanned-sequence accession="chrV__301998__302008__YER072W__VTC1__1.79054054054054__TTATTTTT" name="chrV__301998__302008__YER072W__VTC1__1.79054054054054__TTATTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrV__301911__301921__YER072W__1.68" name="chrV__301911__301921__YER072W__1.68">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__105496__105506__YHR001W__OSH7__1.69620253164557__TGTTGACA" name="chrVIII__105496__105506__YHR001W__OSH7__1.69620253164557__TGTTGACA">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__105950__105960__YHR001W__OSH7__1.45569620253165__TCTTTGTTGA" name="chrVIII__105950__105960__YHR001W__OSH7__1.45569620253165__TCTTTGTTGA">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__105334__105344__YHR001W__1.56" name="chrVIII__105334__105344__YHR001W__1.56">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__384896__384906__YHR143W__DSE2__1.20666666666667__TTGTTTACATT" name="chrVIII__384896__384906__YHR143W__DSE2__1.20666666666667__TTGTTTACATT">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__385167__385177__YHR143W__DSE2__1.6830985915493__TTTCCTCT" name="chrVIII__385167__385177__YHR143W__DSE2__1.6830985915493__TTTCCTCT">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__385045__385055__YHR143W__1.1" name="chrVIII__385045__385055__YHR143W__1.1">
+</scanned-sequence>
+<scanned-sequence accession="chrX__462026__462036__YJR015W__YJR015W__1.52272727272727__TTTCCTCT" name="chrX__462026__462036__YJR015W__YJR015W__1.52272727272727__TTTCCTCT">
+</scanned-sequence>
+<scanned-sequence accession="chrX__462175__462185__YJR015W__1.1" name="chrX__462175__462185__YJR015W__1.1">
+</scanned-sequence>
+<scanned-sequence accession="chrII__311750__311760__YBR037C__SCO1__1.34920634920635__TTTAGTTT" name="chrII__311750__311760__YBR037C__SCO1__1.34920634920635__TTTAGTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrII__311769__311779__YBR037C__1.08" name="chrII__311769__311779__YBR037C__1.08">
+</scanned-sequence>
+<scanned-sequence accession="chrII__311750__311760__YBR038W__CHS2__1.34920634920635__TTTAGTTT" name="chrII__311750__311760__YBR038W__CHS2__1.34920634920635__TTTAGTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrII__311769__311779__YBR038W__1.08" name="chrII__311769__311779__YBR038W__1.08">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__728392__728402__YLR299C-A__YLR299C-A__1.34751773049645__TGTTGTTTAC" name="chrXII__728392__728402__YLR299C-A__YLR299C-A__1.34751773049645__TGTTGTTTAC">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__728527__728537__YLR299C-A__1.2" name="chrXII__728527__728537__YLR299C-A__1.2">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__728392__728402__YLR300W__EXG1__1.34751773049645__TGTTGTTTAC" name="chrXII__728392__728402__YLR300W__EXG1__1.34751773049645__TGTTGTTTAC">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__728527__728537__YLR300W__1.2" name="chrXII__728527__728537__YLR300W__1.2">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__40115__40125__YLL051C__FRE6__1.29032258064516__TTTCCTTG" name="chrXII__40115__40125__YLL051C__FRE6__1.29032258064516__TTTCCTTG">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__40223__40233__YLL051C__1.06" name="chrXII__40223__40233__YLL051C__1.06">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__40115__40125__YLL049W__LDB18__1.29032258064516__TTTCCTTG" name="chrXII__40115__40125__YLL049W__LDB18__1.29032258064516__TTTCCTTG">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__40659__40669__YLL049W__1.58" name="chrXII__40659__40669__YLL049W__1.58">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__231341__231351__YLR042C__YLR042C__1.27631578947368__GTTGTTTA" name="chrXII__231341__231351__YLR042C__YLR042C__1.27631578947368__GTTGTTTA">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__231331__231341__YLR042C__1.7" name="chrXII__231331__231341__YLR042C__1.7">
+</scanned-sequence>
+<scanned-sequence accession="chrI__31008__31018__YAL062W__GDH3__1.25__TTTATTTTT" name="chrI__31008__31018__YAL062W__GDH3__1.25__TTTATTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrI__30823__30833__YAL062W__1.42" name="chrI__30823__30833__YAL062W__1.42">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__343272__343282__YOR008C__SLG1__1.21428571428571__TAGTTTAT" name="chrXV__343272__343282__YOR008C__SLG1__1.21428571428571__TAGTTTAT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__343259__343269__YOR008C__1.52" name="chrXV__343259__343269__YOR008C__1.52">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__343272__343282__YOR008C-A__YOR008C-A__1.21428571428571__TAGTTTAT" name="chrXV__343272__343282__YOR008C-A__YOR008C-A__1.21428571428571__TAGTTTAT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__343259__343269__YOR008C-A__1.52" name="chrXV__343259__343269__YOR008C-A__1.52">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__343272__343282__YOR008W-B__YOR008W-B__1.21428571428571__TAGTTTAT" name="chrXV__343272__343282__YOR008W-B__YOR008W-B__1.21428571428571__TAGTTTAT">
+</scanned-sequence>
+<scanned-sequence accession="chrXV__343259__343269__YOR008W-B__1.52" name="chrXV__343259__343269__YOR008W-B__1.52">
+</scanned-sequence>
+<scanned-sequence accession="chrIII__39484__39494__YCL050C__APA1__1.18518518518519__TTATTTTT" name="chrIII__39484__39494__YCL050C__APA1__1.18518518518519__TTATTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrIII__39749__39759__YCL050C__1.16" name="chrIII__39749__39759__YCL050C__1.16">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__599949__599959__YDR077W__SED1__1.18248175182482__--------" name="chrIV__599949__599959__YDR077W__SED1__1.18248175182482__--------">
+</scanned-sequence>
+<scanned-sequence accession="chrIV__600087__600097__YDR077W__1.5" name="chrIV__600087__600097__YDR077W__1.5">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__121354__121364__YPL227C__ALG5__1.16438356164384__TTGTTTAC" name="chrXVI__121354__121364__YPL227C__ALG5__1.16438356164384__TTGTTTAC">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__121278__121288__YPL227C__1.3" name="chrXVI__121278__121288__YPL227C__1.3">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__121354__121364__YPL226W__NEW1__1.16438356164384__TTGTTTAC" name="chrXVI__121354__121364__YPL226W__NEW1__1.16438356164384__TTGTTTAC">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__121278__121288__YPL226W__1.3" name="chrXVI__121278__121288__YPL226W__1.3">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__687269__687279__YLR272C__YCS4__1.13636363636364__TTTACCTTT" name="chrXII__687269__687279__YLR272C__YCS4__1.13636363636364__TTTACCTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXII__687889__687899__YLR272C__1.42" name="chrXII__687889__687899__YLR272C__1.42">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__262107__262117__YHR079C__IRE1__1.12903225806452__CTTTTTTT" name="chrVIII__262107__262117__YHR079C__IRE1__1.12903225806452__CTTTTTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__261645__261655__YHR079C__1.2" name="chrVIII__261645__261655__YHR079C__1.2">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__470831__470841__YHR183W__GND1__1.1038961038961__GCTTGTTT" name="chrVIII__470831__470841__YHR183W__GND1__1.1038961038961__GCTTGTTT">
+</scanned-sequence>
+<scanned-sequence accession="chrVIII__470187__470197__YHR183W__1.28" name="chrVIII__470187__470197__YHR183W__1.28">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__797703__797713__YPR134W__MSS18__1.09459459459459__TTTTTCTT" name="chrXVI__797703__797713__YPR134W__MSS18__1.09459459459459__TTTTTCTT">
+</scanned-sequence>
+<scanned-sequence accession="chrXVI__797136__797146__YPR134W__1.52" name="chrXVI__797136__797146__YPR134W__1.52">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

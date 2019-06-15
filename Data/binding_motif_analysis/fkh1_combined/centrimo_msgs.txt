@@ -1,0 +1,4 @@
+Skipping sequence chrII__166__176__YBL113W-A__YBL113W-A__3.3112582781457__AAACAATG as its length (421) does not match the expected length (501).
+Skipping sequence chrII__166__176__YBL113W-A__1.01923076923077 as its length (421) does not match the expected length (501).
+Warning: 7/772 motifs were skipped due to the score threshold (5.00).
+         Consider decreasing the score threshold.

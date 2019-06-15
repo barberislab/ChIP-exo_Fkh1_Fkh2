@@ -1,0 +1,30 @@
+MOTIF_INDEX	MOTIF_SOURCE	MOTIF_ID	ALT_ID	CONSENSUS	WIDTH	SITES	E-VALUE	E-VALUE_SOURCE	MOST_SIMILAR_MOTIF_SOURCE	MOST_SIMILAR_MOTIF	URL
+1	MEME	TGTTTACCTTTTTCCGAWTHDGGMAAYAW	MEME-1	TGTTTACCTTTTTCCGAWTHDGGMAAYAW	29	36	7.0e-122	MEME	db/YEAST/YEASTRACT_20130918.meme	Mcm1p&consensus=atttCCgaWWtgGGaaaxa (Mcm1p)	http://www.yeastract.com/view.php?existing=consensus&proteinname=Mcm1p&consensus=atttCCgaWWtgGGaaaxa
+2	MEME	GCCAAAATTCTTGGCCCTGATTCAGGTACC	MEME-2	GCCAAAATTCTTGGCCCTGATTCAGGTACC	30	11	6.2e-081	MEME	db/YEAST/YEASTRACT_20130918.meme	Skn7p&consensus=GGCCCAGA (Skn7p)	http://www.yeastract.com/view.php?existing=consensus&proteinname=Skn7p&consensus=GGCCCAGA
+3	MEME	AWACAYTTTCWTRBRTGRKKKTKTTTTGYB	MEME-3	AWACAYTTTCWTRBRTGRKKKTKTTTTGYB	30	16	6.1e-062	MEME	db/YEAST/YEASTRACT_20130918.meme	Flo8p&consensus=TTTGCN{97}GCAAA (Flo8p)	http://www.yeastract.com/view.php?existing=consensus&proteinname=Flo8p&consensus=TTTGCN{97}GCAAA
+4	db/YEAST/YEASTRACT_20130918.meme	Fkh2p&consensus=gtaaaca	Fkh2p	GTAAACA	7	101	1.8e-011	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh2p&consensus=gtaaaca
+5	DREME	GTMAAC	DREME-1	GTMAAC	6	52	2.7e-011	DREME	db/YEAST/YEASTRACT_20130918.meme	Fkh2p&consensus=gtaaaca (Fkh2p)	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh2p&consensus=gtaaaca
+6	db/YEAST/YEASTRACT_20130918.meme	Fkh1p&consensus=gtaaAcAaa	Fkh1p	GTAAACAAA	9	132	2.3e-010	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh1p&consensus=gtaaAcAaa
+7	db/YEAST/YEASTRACT_20130918.meme	Fkh1p&consensus=GTMAACAA	Fkh1p	GTMAACAA	8	115	2.3e-009	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh1p&consensus=GTMAACAA
+8	db/YEAST/YEASTRACT_20130918.meme	Fkh2p&consensus=GTMAACAA	Fkh2p	GTMAACAA	8	115	2.3e-009	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh2p&consensus=GTMAACAA
+9	db/YEAST/YEASTRACT_20130918.meme	Fkh1p&consensus=RYMAAYA	Fkh1p	RYMAAYA	7	129	3.7e-008	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh1p&consensus=RYMAAYA
+10	db/YEAST/YEASTRACT_20130918.meme	Fkh2p&consensus=RYMAAYA	Fkh2p	RYMAAYA	7	129	3.7e-008	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh2p&consensus=RYMAAYA
+11	db/YEAST/YEASTRACT_20130918.meme	Fkh1p&consensus=aaDtGTAAACAAagxxga	Fkh1p	AADTGTAAACAAAGNNGA	18	128	7.5e-008	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh1p&consensus=aaDtGTAAACAAagxxga
+12	db/YEAST/YEASTRACT_20130918.meme	Fkh2p&consensus=aaaGTAAACAAagxxgV	Fkh2p	AAAGTAAACAAAGNNGV	17	127	6.9e-006	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh2p&consensus=aaaGTAAACAAagxxgV
+13	DREME	CGSCAAAA	DREME-4	CGSCAAAA	8	19	5.2e-005	DREME	db/YEAST/YEASTRACT_20130918.meme	Eds1p&consensus=cGGAAaAAt (Eds1p)	http://www.yeastract.com/view.php?existing=consensus&proteinname=Eds1p&consensus=cGGAAaAAt
+14	db/YEAST/YEASTRACT_20130918.meme	Cep3p&consensus=YTCGGAAa	Cep3p	YTCGGAAA	8	128	3.9e-004	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Cep3p&consensus=YTCGGAAa
+15	db/YEAST/YEASTRACT_20130918.meme	Pdr3p&consensus=TTCCGGAAtc	Pdr3p	TTCCGGAATC	10	83	1.1e-003	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Pdr3p&consensus=TTCCGGAAtc
+16	DREME	AAAGRTA	DREME-2	AAAGRTA	7	23	1.1e-003	DREME	db/YEAST/YEASTRACT_20130918.meme	Mot3p&consensus=AAGGKA (Mot3p)	http://www.yeastract.com/view.php?existing=consensus&proteinname=Mot3p&consensus=AAGGKA
+17	DREME	TCAGGWA	DREME-3	TCAGGWA	7	20	2.5e-003	DREME	 	 	 
+18	db/YEAST/YEASTRACT_20130918.meme	Ste12p&consensus=MTGAAACA	Ste12p	MTGAAACA	8	109	4.5e-003	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Ste12p&consensus=MTGAAACA
+19	db/YEAST/YEASTRACT_20130918.meme	YER184C&consensus=HtCCGGMa	YER184C	HTCCGGMA	8	121	5.0e-003	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=YER184C&consensus=HtCCGGMa
+20	db/YEAST/YEASTRACT_20130918.meme	Fkh1p&consensus=RTAAAYAA	Fkh1p	RTAAAYAA	8	131	7.4e-003	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh1p&consensus=RTAAAYAA
+21	db/YEAST/YEASTRACT_20130918.meme	Fkh2p&consensus=RTAAAYAA	Fkh2p	RTAAAYAA	8	131	7.4e-003	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Fkh2p&consensus=RTAAAYAA
+22	db/YEAST/YEASTRACT_20130918.meme	Ste12p&consensus=CGTTTCAN{40}ATGAAACA	Ste12p	CGTTTCA	7	112	1.3e-002	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Ste12p&consensus=CGTTTCAN{40}ATGAAACA
+23	db/YEAST/YEASTRACT_20130918.meme	Gln3p&consensus=tattgctGATAAgGccxHaa	Gln3p	TATTGCTGATAAGGCCNHAA	20	112	3.1e-002	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Gln3p&consensus=tattgctGATAAgGccxHaa
+24	db/YEAST/YEASTRACT_20130918.meme	Sut2p&consensus=gWCctgV	Sut2p	GWCCTGV	7	131	3.3e-002	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Sut2p&consensus=gWCctgV
+25	db/YEAST/YEASTRACT_20130918.meme	Msn2p&consensus=agGgRB	Msn2p	AGGGRB	6	131	3.7e-002	CENTRIMO	 	 	http://www.yeastract.com/view.php?existing=consensus&proteinname=Msn2p&consensus=agGgRB
+
+# MEME-ChIP (Motif Analysis of Large Nucleotide Datasets): Version 5.0.2 released on Thu Aug 30 14:26:08 2018 -0700
+# The format of this file is described at http://meme-suite.org//doc/meme-chip-output-format.html
+# meme-chip -oc . -time 300 -ccut 100 -fdesc description -order 1 -db db/YEAST/YEASTRACT_20130918.meme -meme-mod zoops -meme-minw 6 -meme-maxw 30 -meme-nmotifs 3 -meme-searchsize 100000 -dreme-e 0.05 -centrimo-score 5.0 -centrimo-ethresh 10.0 Fkh2_log_peaks.fasta

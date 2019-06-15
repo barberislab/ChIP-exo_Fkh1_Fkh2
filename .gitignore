@@ -1,0 +1,8 @@
+Figures/illustrator
+__pycache__
+*.db
+*.pyc
+*.DS_Store
+*.ipynb_ch*
+*.Rhistory
+*.ai

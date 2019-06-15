@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<tomtom version="5.0.2" release="Thu Aug 30 14:26:08 2018 -0700">
+  <model>
+    <command_line>tomtom -verbosity 1 -oc meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc meme_out/meme.xml db/YEAST/YEASTRACT_20130918.meme</command_line>
+    <distance_measure value="pearson"/>
+    <threshold type="evalue">1</threshold>
+    <alphabet name="DNA" like="dna">
+      <letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+      <letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+      <letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+      <letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+      <letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+      <letter id="V" symbol="V" equals="ACG" name="Not T"/>
+      <letter id="H" symbol="H" equals="ACT" name="Not G"/>
+      <letter id="D" symbol="D" equals="AGT" name="Not C"/>
+      <letter id="B" symbol="B" equals="CGT" name="Not A"/>
+      <letter id="M" symbol="M" equals="AC" name="Amino"/>
+      <letter id="R" symbol="R" equals="AG" name="Purine"/>
+      <letter id="W" symbol="W" equals="AT" name="Weak"/>
+      <letter id="S" symbol="S" equals="CG" name="Strong"/>
+      <letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+      <letter id="K" symbol="K" equals="GT" name="Keto"/>
+    </alphabet>
+    <strands>both</strands>
+    <background from="--query--" A="0.313" C="0.187" G="0.187" T="0.313"/>
+    <host>node322</host>
+    <when>Thu Nov 22 15:07:28 2018</when>
+  </model>
+  <query_dbs>
+    <db source="meme_out/meme.xml" name="meme.xml" loaded="3" excluded="0" last_mod_date="Thu Nov 22 15:06:01 2018"/>
+  </query_dbs>
+  <target_dbs>
+    <db source="db/YEAST/YEASTRACT_20130918.meme" name="YEASTRACT_20130918" loaded="732" excluded="0" last_mod_date="Tue Aug 28 20:58:43 2018"/>
+  </target_dbs>
+  <queries>
+    <motif db="0" id="CGCCAAAATTCTTGGCCCTGATTCAGGTAC" alt="MEME-2" length="30" nsites="13" evalue="1.5e-081">
+      <pos A="0.00238931" C="0.993794" G="0.00142748" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.993794" T="0.00238931"/>
+      <pos A="0.307733" C="0.688451" G="0.00142748" T="0.00238931"/>
+      <pos A="0.00238931" C="0.993794" G="0.00142748" T="0.00238931"/>
+      <pos A="0.994756" C="0.00142748" G="0.00142748" T="0.00238931"/>
+      <pos A="0.689413" C="0.306771" G="0.00142748" T="0.00238931"/>
+      <pos A="0.994756" C="0.00142748" G="0.00142748" T="0.00238931"/>
+      <pos A="0.994756" C="0.00142748" G="0.00142748" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.306771" T="0.689413"/>
+      <pos A="0.307733" C="0.00142748" G="0.00142748" T="0.689413"/>
+      <pos A="0.00238931" C="0.688451" G="0.306771" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.00142748" T="0.994756"/>
+      <pos A="0.00238931" C="0.306771" G="0.00142748" T="0.689413"/>
+      <pos A="0.307733" C="0.00142748" G="0.688451" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.688451" T="0.307733"/>
+      <pos A="0.00238931" C="0.688451" G="0.00142748" T="0.307733"/>
+      <pos A="0.00238931" C="0.993794" G="0.00142748" T="0.00238931"/>
+      <pos A="0.00238931" C="0.688451" G="0.306771" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.00142748" T="0.994756"/>
+      <pos A="0.00238931" C="0.00142748" G="0.688451" T="0.307733"/>
+      <pos A="0.994756" C="0.00142748" G="0.00142748" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.00142748" T="0.994756"/>
+      <pos A="0.00238931" C="0.00142748" G="0.306771" T="0.689413"/>
+      <pos A="0.00238931" C="0.993794" G="0.00142748" T="0.00238931"/>
+      <pos A="0.994756" C="0.00142748" G="0.00142748" T="0.00238931"/>
+      <pos A="0.00238931" C="0.306771" G="0.688451" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.993794" T="0.00238931"/>
+      <pos A="0.00238931" C="0.00142748" G="0.306771" T="0.689413"/>
+      <pos A="0.994756" C="0.00142748" G="0.00142748" T="0.00238931"/>
+      <pos A="0.00238931" C="0.993794" G="0.00142748" T="0.00238931"/>
+    </motif>
+    <motif db="0" id="GRAAAADRTAAACAA" alt="MEME-1" length="15" nsites="141" evalue="2.2e-169">
+      <pos A="0.269535" C="0.00013253" G="0.680501" T="0.0498316"/>
+      <pos A="0.553021" C="0.0780912" G="0.319055" T="0.0498316"/>
+      <pos A="0.7302" C="0.0072195" G="0.148963" T="0.113616"/>
+      <pos A="0.992426" C="0.00013253" G="0.00013253" T="0.0073088"/>
+      <pos A="0.801072" C="0.00013253" G="0.0355684" T="0.163227"/>
+      <pos A="0.850683" C="0.00013253" G="0.120614" T="0.0285707"/>
+      <pos A="0.354581" C="0.10644" G="0.212748" T="0.326232"/>
+      <pos A="0.418365" C="0.0143065" G="0.567106" T="0.000221828"/>
+      <pos A="0.170314" C="0.00013253" G="0.00013253" T="0.829421"/>
+      <pos A="0.850683" C="0.148963" G="0.00013253" T="0.000221828"/>
+      <pos A="0.964077" C="0.0355684" G="0.00013253" T="0.000221828"/>
+      <pos A="0.999513" C="0.00013253" G="0.00013253" T="0.000221828"/>
+      <pos A="0.106529" C="0.744286" G="0.00013253" T="0.149052"/>
+      <pos A="0.971164" C="0.0284814" G="0.00013253" T="0.000221828"/>
+      <pos A="0.673503" C="0.0639173" G="0.15605" T="0.106529"/>
+    </motif>
+    <motif db="0" id="SRDRARRVRAARAMMHRVAAA" alt="MEME-3" length="21" nsites="122" evalue="4.7e-083">
+      <pos A="0.000256347" C="0.565264" G="0.319563" T="0.114916"/>
+      <pos A="0.467087" C="0.082053" G="0.245854" T="0.205007"/>
+      <pos A="0.409757" C="0.082053" G="0.294993" T="0.213197"/>
+      <pos A="0.450707" C="0.000153153" G="0.352323" T="0.196816"/>
+      <pos A="0.720977" C="0.196713" G="0.082053" T="0.000256347"/>
+      <pos A="0.352427" C="0.000153153" G="0.622594" T="0.0248262"/>
+      <pos A="0.508037" C="0.082053" G="0.409653" T="0.000256347"/>
+      <pos A="0.385187" C="0.204903" G="0.409653" T="0.000256347"/>
+      <pos A="0.589937" C="0.000153153" G="0.409653" T="0.000256347"/>
+      <pos A="0.688217" C="0.106623" G="0.204903" T="0.000256347"/>
+      <pos A="0.999437" C="0.000153153" G="0.000153153" T="0.000256347"/>
+      <pos A="0.491657" C="0.000153153" G="0.417844" T="0.0903465"/>
+      <pos A="0.540797" C="0.000153153" G="0.245854" T="0.213197"/>
+      <pos A="0.516226" C="0.466984" G="0.0165327" T="0.000256347"/>
+      <pos A="0.565367" C="0.303184" G="0.000153153" T="0.131297"/>
+      <pos A="0.376997" C="0.270424" G="0.0984336" T="0.254146"/>
+      <pos A="0.303287" C="0.196713" G="0.499744" T="0.000256347"/>
+      <pos A="0.303287" C="0.278614" G="0.417844" T="0.000256347"/>
+      <pos A="0.794687" C="0.155764" G="0.00834344" T="0.0412068"/>
+      <pos A="0.852017" C="0.000153153" G="0.000153153" T="0.147677"/>
+      <pos A="0.524417" C="0.139383" G="0.163953" T="0.172246"/>
+    </motif>
+  </queries>
+  <targets>
+    <motif db="0" id="Azf1p&amp;consensus=AAAAGAAA" alt="Azf1p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Azf1p&amp;consensus=AAAAGAAA">
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Azf1p&amp;consensus=AAGAAAAA" alt="Azf1p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Azf1p&amp;consensus=AAGAAAAA">
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Azf1p&amp;consensus=aAAAAGAAa" alt="Azf1p" length="9" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Azf1p&amp;consensus=aAAAAGAAa">
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+    </motif>
+    <motif db="0" id="Fkh1p&amp;consensus=GTMAACAA" alt="Fkh1p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh1p&amp;consensus=GTMAACAA">
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.483" C="0.471545" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Fkh1p&amp;consensus=RTAAAYAA" alt="Fkh1p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh1p&amp;consensus=RTAAAYAA">
+      <pos A="0.483" C="0.017" G="0.471545" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Fkh1p&amp;consensus=RYAAACAWW" alt="Fkh1p" length="9" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh1p&amp;consensus=RYAAACAWW">
+      <pos A="0.483" C="0.017" G="0.471545" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483" C="0.017" G="0.017" T="0.483"/>
+      <pos A="0.483" C="0.017" G="0.017" T="0.483"/>
+    </motif>
+    <motif db="0" id="Fkh1p&amp;consensus=RYMAAYA" alt="Fkh1p" length="7" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh1p&amp;consensus=RYMAAYA">
+      <pos A="0.483" C="0.017" G="0.471545" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.483" C="0.471545" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Fkh1p&amp;consensus=aaDtGTAAACAAagxxga" alt="Fkh1p" length="18" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh1p&amp;consensus=aaDtGTAAACAAagxxga">
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.331485" C="0.017" G="0.32003" T="0.331485"/>
+      <pos A="0.179666" C="0.168212" G="0.168212" T="0.483911"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.179666" C="0.168212" G="0.472456" T="0.179666"/>
+      <pos A="0.255727" C="0.244273" G="0.244273" T="0.255727"/>
+      <pos A="0.255727" C="0.244273" G="0.244273" T="0.255727"/>
+      <pos A="0.179666" C="0.168212" G="0.472456" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+    </motif>
+    <motif db="0" id="Fkh1p&amp;consensus=gtaaAcAaa" alt="Fkh1p" length="9" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh1p&amp;consensus=gtaaAcAaa">
+      <pos A="0.179666" C="0.168212" G="0.472456" T="0.179666"/>
+      <pos A="0.179666" C="0.168212" G="0.168212" T="0.483911"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.179666" C="0.472456" G="0.168212" T="0.179666"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+    </motif>
+    <motif db="0" id="Fkh2p&amp;consensus=GTMAACAA" alt="Fkh2p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh2p&amp;consensus=GTMAACAA">
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.483" C="0.471545" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Fkh2p&amp;consensus=RTAAAYAA" alt="Fkh2p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh2p&amp;consensus=RTAAAYAA">
+      <pos A="0.483" C="0.017" G="0.471545" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Fkh2p&amp;consensus=RYAAACAWW" alt="Fkh2p" length="9" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh2p&amp;consensus=RYAAACAWW">
+      <pos A="0.483" C="0.017" G="0.471545" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483" C="0.017" G="0.017" T="0.483"/>
+      <pos A="0.483" C="0.017" G="0.017" T="0.483"/>
+    </motif>
+    <motif db="0" id="Fkh2p&amp;consensus=RYMAAYA" alt="Fkh2p" length="7" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh2p&amp;consensus=RYMAAYA">
+      <pos A="0.483" C="0.017" G="0.471545" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.483" C="0.471545" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Fkh2p&amp;consensus=aaaGTAAACAAagxxgV" alt="Fkh2p" length="17" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh2p&amp;consensus=aaaGTAAACAAagxxgV">
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.179666" C="0.168212" G="0.472456" T="0.179666"/>
+      <pos A="0.255727" C="0.244273" G="0.244273" T="0.255727"/>
+      <pos A="0.255727" C="0.244273" G="0.244273" T="0.255727"/>
+      <pos A="0.179666" C="0.168212" G="0.472456" T="0.179666"/>
+      <pos A="0.331485" C="0.32003" G="0.32003" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Fkh2p&amp;consensus=gtaaaca" alt="Fkh2p" length="7" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh2p&amp;consensus=gtaaaca">
+      <pos A="0.179666" C="0.168212" G="0.472456" T="0.179666"/>
+      <pos A="0.179666" C="0.168212" G="0.168212" T="0.483911"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.179666" C="0.472456" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+    </motif>
+    <motif db="0" id="Fkh2p&amp;consensus=taaaca" alt="Fkh2p" length="6" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Fkh2p&amp;consensus=taaaca">
+      <pos A="0.179666" C="0.168212" G="0.168212" T="0.483911"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.179666" C="0.472456" G="0.168212" T="0.179666"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+    </motif>
+    <motif db="0" id="Gcn4p&amp;consensus=TGATTCA" alt="Gcn4p" length="7" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Gcn4p&amp;consensus=TGATTCA">
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.0284545" C="0.017" G="0.017" T="0.937545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+    <motif db="0" id="Hcm1p&amp;consensus=WAAYAAACAAW" alt="Hcm1p" length="11" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Hcm1p&amp;consensus=WAAYAAACAAW">
+      <pos A="0.483" C="0.017" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.471545" G="0.017" T="0.483"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483" C="0.017" G="0.017" T="0.483"/>
+    </motif>
+    <motif db="0" id="Hcm1p&amp;consensus=atMAACAa" alt="Hcm1p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Hcm1p&amp;consensus=atMAACAa">
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+      <pos A="0.179666" C="0.168212" G="0.168212" T="0.483911"/>
+      <pos A="0.483" C="0.471545" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.483911" C="0.168212" G="0.168212" T="0.179666"/>
+    </motif>
+    <motif db="0" id="Skn7p&amp;consensus=GGCCCAGA" alt="Skn7p" length="8" nsites="1"
+        url="http://www.yeastract.com/view.php?existing=consensus&amp;proteinname=Skn7p&amp;consensus=GGCCCAGA">
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.926091" G="0.017" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+      <pos A="0.0284545" C="0.017" G="0.926091" T="0.0284545"/>
+      <pos A="0.937545" C="0.017" G="0.017" T="0.0284545"/>
+    </motif>
+  </targets>
+  <matches>
+    <query idx="1">
+      <target idx="4" rc="n" off="-7" pv="8.05e-06" ev="5.89e-03" qv="4.85e-03"/>
+      <target idx="10" rc="n" off="-7" pv="8.05e-06" ev="5.89e-03" qv="4.85e-03"/>
+      <target idx="3" rc="n" off="-7" pv="1.33e-05" ev="9.76e-03" qv="4.85e-03"/>
+      <target idx="9" rc="n" off="-7" pv="1.33e-05" ev="9.76e-03" qv="4.85e-03"/>
+      <target idx="8" rc="n" off="-7" pv="3.04e-05" ev="2.23e-02" qv="8.85e-03"/>
+      <target idx="18" rc="n" off="-7" pv="5.33e-05" ev="3.90e-02" qv="1.29e-02"/>
+      <target idx="14" rc="n" off="-7" pv="9.32e-05" ev="6.82e-02" qv="1.94e-02"/>
+      <target idx="7" rc="n" off="-3" pv="1.37e-04" ev="1.00e-01" qv="2.49e-02"/>
+      <target idx="5" rc="n" off="-7" pv="2.81e-04" ev="2.06e-01" qv="4.09e-02"/>
+      <target idx="11" rc="n" off="-7" pv="2.81e-04" ev="2.06e-01" qv="4.09e-02"/>
+      <target idx="15" rc="n" off="-8" pv="3.30e-04" ev="2.41e-01" qv="4.35e-02"/>
+      <target idx="13" rc="n" off="-4" pv="3.67e-04" ev="2.69e-01" qv="4.45e-02"/>
+      <target idx="17" rc="n" off="-5" pv="8.23e-04" ev="6.03e-01" qv="9.21e-02"/>
+      <target idx="6" rc="n" off="-7" pv="9.66e-04" ev="7.07e-01" qv="9.36e-02"/>
+      <target idx="12" rc="n" off="-7" pv="9.66e-04" ev="7.07e-01" qv="9.36e-02"/>
+      <target idx="2" rc="n" off="-2" pv="1.19e-03" ev="8.70e-01" qv="1.08e-01"/>
+    </query>
+    <query idx="0">
+      <target idx="16" rc="n" off="-18" pv="5.60e-04" ev="4.10e-01" qv="8.20e-01"/>
+      <target idx="19" rc="n" off="-13" pv="1.20e-03" ev="8.79e-01" qv="8.79e-01"/>
+    </query>
+    <query idx="2">
+      <target idx="1" rc="n" off="-3" pv="1.76e-04" ev="1.29e-01" qv="1.54e-01"/>
+      <target idx="2" rc="n" off="-12" pv="2.11e-04" ev="1.54e-01" qv="1.54e-01"/>
+      <target idx="0" rc="n" off="-13" pv="1.18e-03" ev="8.61e-01" qv="5.74e-01"/>
+    </query>
+  </matches>
+  <runtime cycles="23880000" seconds="23.880"/>
+</tomtom>

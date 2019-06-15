@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file ./Fkh2_combined.fasta
+# seqs: 546    min: 501    max: 501    avg: 501.0    sum: 273546    alph: DNA
+# order 0
+A 3.132e-01
+C 1.868e-01
+G 1.868e-01
+T 3.132e-01
+# order 1
+AA 1.174e-01
+AC 5.096e-02
+AG 5.821e-02
+AT 8.659e-02
+CA 6.038e-02
+CC 3.762e-02
+CG 3.063e-02
+CT 5.821e-02
+GA 6.009e-02
+GC 3.813e-02
+GG 3.762e-02
+GT 5.096e-02
+TA 7.525e-02
+TC 6.009e-02
+TG 6.038e-02
+TT 1.174e-01

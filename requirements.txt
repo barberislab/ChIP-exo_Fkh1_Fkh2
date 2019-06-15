@@ -1,0 +1,6 @@
+pandas
+numpy
+roman
+matplotlib
+openpyxl
+jupyter_contrib_nbextensions

@@ -1,0 +1,4 @@
+
+# FIMO (Find Individual Motif Occurrences): Version 5.0.2 compiled on Sep  4 2018 at 21:08:29
+# The format of this file is described at http://alternate.meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_8 --bgfile ./background --motif AATAYCT dreme_out/dreme.xml ./Fkh2_combined.fasta

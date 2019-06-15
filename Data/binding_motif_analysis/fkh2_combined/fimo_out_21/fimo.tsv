@@ -1,0 +1,11 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+Haa1p&consensus=GGCGCGGGG	Haa1p	chrXIII__661939__661949__YMR199W__1.48051948051948	235	243	-	20.7911	2.77e-07	0.0496	GGCGCGGGG
+Haa1p&consensus=GGCGCGGGG	Haa1p	chrXIII__661884__661948__YMR199W__0.000297177316883	263	271	-	20.7911	2.77e-07	0.0496	GGCGCGGGG
+Haa1p&consensus=GGCGCGGGG	Haa1p	chrXIII__661866__661876__YMR199W__CLN1__1.44933920704846__TTGTTTAC	308	316	-	20.7911	2.77e-07	0.0496	GGCGCGGGG
+Haa1p&consensus=GGCGCGGGG	Haa1p	chrXV__464631__464641__YOR073W__1.55844155844156	316	324	+	15.019	1.11e-05	0.996	GGCGCAGGG
+Haa1p&consensus=GGCGCGGGG	Haa1p	chrXV__464629__464641__YOR073W__0.00118447850508	317	325	+	15.019	1.11e-05	0.996	GGCGCAGGG
+Haa1p&consensus=GGCGCGGGG	Haa1p	chrII__686599__686670__YBR235W__0.00147117187278	331	339	+	15.019	1.11e-05	0.996	GGCGCGGGC
+
+# FIMO (Find Individual Motif Occurrences): Version 5.0.2 compiled on Sep  4 2018 at 21:08:29
+# The format of this file is described at http://alternate.meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_21 --bgfile ./background --motif Haa1p&consensus=GGCGCGGGG db/YEAST/YEASTRACT_20130918.meme ./Fkh2_combined.fasta

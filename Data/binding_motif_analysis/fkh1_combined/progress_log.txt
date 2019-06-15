@@ -1,0 +1,306 @@
+Invoking:
+  getsize ./Fkh1_combined.fasta 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.066302
+Invoking:
+  fasta-most -min 50 < ./Fkh1_combined.fasta 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.203484
+Invoking:
+  fasta-center -dna -len 100 < ./Fkh1_combined.fasta 1> ./seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.409606
+Invoking:
+  fasta-shuffle-letters ./seqs-centered ./seqs-shuffled -kmer 2 -tag -dinuc -dna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.042101
+Invoking:
+  fasta-get-markov -nostatus -nosummary -dna -m 1 ./Fkh1_combined.fasta ./background
+Finished invoke:
+  name: bg  status: 0  time: 0.038155
+Invoking:
+  meme ./seqs-centered -oc meme_out -mod zoops -nmotifs 3 -minw 6 -maxw 30 -bfile ./background -dna -searchsize 100000 -time 5082 -revcomp -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 2246.455764
+Invoking:
+  dreme -verbosity 1 -oc dreme_out -png -dna -p ./seqs-centered -n ./seqs-shuffled -t 6241 -e 0.05
+Finished invoke:
+  name: dreme  status: 0  time: 597.955661
+Invoking:
+  centrimo -seqlen 501 -verbosity 1 -oc centrimo_out -bfile ./background -score 5.0 -ethresh 10.0 ./Fkh1_combined.fasta meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: centrimo  status: 0  time: 24.855086
+Invoking:
+  tomtom -verbosity 1 -oc meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc meme_out/meme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: meme_tomtom  status: 0  time: 36.917807
+Invoking:
+  tomtom -verbosity 1 -oc dreme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: dreme_tomtom  status: 0  time: 12.018348
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 ./combined.meme ./combined.meme 1> ./motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 24.464297
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_1 -bgfile ./background -keepprimary -primary HWTWTBYTTGTTTACHTTTTK ./Fkh1_combined.fasta meme_out/meme.xml meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: spamo1  status: 139  time: 0.37039
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_2 -bgfile ./background -keepprimary -primary Fkh2p\&consensus=gtaaaca ./Fkh1_combined.fasta db/YEAST/YEASTRACT_20130918.meme meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: spamo2  status: 0  time: 1.713169
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_3 -bgfile ./background -keepprimary -primary YATATTATTWDWKSVCBTCAGGGWDSTWT ./Fkh1_combined.fasta meme_out/meme.xml meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: spamo3  status: 0  time: 2.918828
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_4 -bgfile ./background -keepprimary -primary Ecm22p\&consensus=cCTCGTWTAa ./Fkh1_combined.fasta db/YEAST/YEASTRACT_20130918.meme meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: spamo4  status: 134  time: 0.811283
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_5 -bgfile ./background -keepprimary -primary AACAANAA ./Fkh1_combined.fasta dreme_out/dreme.xml meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: spamo5  status: 134  time: 0.390233
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_6 -bgfile ./background -keepprimary -primary Ixr1p\&consensus=KTTSAAYKGTTYASA ./Fkh1_combined.fasta db/YEAST/YEASTRACT_20130918.meme meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: spamo6  status: 134  time: 0.805618
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_7 -bgfile ./background -keepprimary -primary Hmlalpha2p\&consensus=tCaACAtG ./Fkh1_combined.fasta db/YEAST/YEASTRACT_20130918.meme meme_out/meme.xml dreme_out/dreme.xml db/YEAST/YEASTRACT_20130918.meme
+Finished invoke:
+  name: spamo7  status: 15  time: 7518.02831  (ran out of time!)
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_1 --bgfile ./background --motif HWTWTBYTTGTTTACHTTTTK meme_out/meme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo1  status: 0  time: 0.434554
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_2 --bgfile ./background --motif Fkh2p\&consensus=gtaaaca db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo2  status: 0  time: 0.631852
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_3 --bgfile ./background --motif YATATTATTWDWKSVCBTCAGGGWDSTWT meme_out/meme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo3  status: 0  time: 0.432694
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_4 --bgfile ./background --motif Ecm22p\&consensus=cCTCGTWTAa db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo4  status: 0  time: 0.647468
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_5 --bgfile ./background --motif AACAANAA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo5  status: 0  time: 0.404082
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_6 --bgfile ./background --motif Ixr1p\&consensus=KTTSAAYKGTTYASA db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo6  status: 0  time: 0.660705
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_7 --bgfile ./background --motif Hmlalpha2p\&consensus=tCaACAtG db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo7  status: 0  time: 0.643891
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_8 --bgfile ./background --motif Mcm1p\&consensus=TTWCCYAAWNNGGWAAWW db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo8  status: 0  time: 0.670778
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_9 --bgfile ./background --motif Hmra2p\&consensus=cRTGTAAW db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo9  status: 0  time: 0.639733
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_10 --bgfile ./background --motif Matalpha2p\&consensus=DcRTGT db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo10  status: 0  time: 0.608301
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_11 --bgfile ./background --motif Dal82p\&consensus=aaWgYGCGc db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo11  status: 0  time: 0.642456
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_12 --bgfile ./background --motif Rox1p\&consensus=TCTATTGTTTCCC db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo12  status: 0  time: 0.654197
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_13 --bgfile ./background --motif TCTTSAAA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo13  status: 0  time: 0.55542
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_14 --bgfile ./background --motif MGAGAA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo14  status: 0  time: 0.572802
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_15 --bgfile ./background --motif CGCAATTR dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo15  status: 0  time: 0.611392
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_16 --bgfile ./background --motif AGRAAG dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo16  status: 0  time: 0.57182
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_17 --bgfile ./background --motif ACCCRG dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo17  status: 0  time: 0.57707
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_18 --bgfile ./background --motif Mot3p\&consensus=WAGGTA db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo18  status: 0  time: 0.958753
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_19 --bgfile ./background --motif Swi4p\&consensus=tTTCGCGt db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo19  status: 0  time: 1.029627
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_20 --bgfile ./background --motif ACGCGCS dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo20  status: 0  time: 0.657333
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_21 --bgfile ./background --motif CAATGCS dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo21  status: 0  time: 0.662174
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_22 --bgfile ./background --motif SCCTTGA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo22  status: 0  time: 0.650574
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_23 --bgfile ./background --motif Met31p\&consensus=YACagYgM db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo23  status: 0  time: 1.075345
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_24 --bgfile ./background --motif Rfx1p\&consensus=TTGTTGTGGCAAC db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo24  status: 0  time: 1.100955
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_25 --bgfile ./background --motif ASCTAAAC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo25  status: 0  time: 0.653121
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_26 --bgfile ./background --motif CCGCACWC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo26  status: 0  time: 0.672771
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_27 --bgfile ./background --motif CAAASCTC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo27  status: 0  time: 0.645866
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_28 --bgfile ./background --motif Pdr3p\&consensus=VCGGaa db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo28  status: 0  time: 1.023379
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_29 --bgfile ./background --motif TTGCCTRA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo29  status: 0  time: 0.659539
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_30 --bgfile ./background --motif ATATATAB dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo30  status: 0  time: 0.659465
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_31 --bgfile ./background --motif Azf1p\&consensus=aAAAAGAAa db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo31  status: 0  time: 1.095653
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_32 --bgfile ./background --motif GTGAARTA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo32  status: 0  time: 0.654991
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_33 --bgfile ./background --motif CCSTCAC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo33  status: 0  time: 0.648185
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_34 --bgfile ./background --motif CATSAGC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo34  status: 0  time: 0.653655
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_35 --bgfile ./background --motif ATTKGCAC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo35  status: 0  time: 0.659831
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_36 --bgfile ./background --motif GTGATGA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo36  status: 0  time: 0.651049
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_37 --bgfile ./background --motif Cbf1p\&consensus=TCACGTT db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo37  status: 0  time: 1.068178
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_38 --bgfile ./background --motif TTCCCAAA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo38  status: 0  time: 0.654621
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_39 --bgfile ./background --motif TCCCRAGA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo39  status: 0  time: 0.653637
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_40 --bgfile ./background --motif Yap7p\&consensus=TKaCGTRA db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo40  status: 0  time: 1.072202
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_41 --bgfile ./background --motif CAGCKGC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo41  status: 0  time: 0.664
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_42 --bgfile ./background --motif Mcm1p\&consensus=aAATtaSK db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo42  status: 0  time: 1.085283
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_43 --bgfile ./background --motif GTGGYA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo43  status: 0  time: 0.617196
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_44 --bgfile ./background --motif CATAVCC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo44  status: 0  time: 0.667799
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_45 --bgfile ./background --motif Stb4p\&consensus=YTCGGAA db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo45  status: 0  time: 1.076387
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_46 --bgfile ./background --motif ATGMGAAC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo46  status: 0  time: 0.656868
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_47 --bgfile ./background --motif Ste12p\&consensus=CGTTTCAAAATGAAACA db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo47  status: 0  time: 1.113596
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_48 --bgfile ./background --motif CCATAK dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo48  status: 0  time: 0.610795
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_49 --bgfile ./background --motif GTATTCGA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo49  status: 0  time: 0.667672
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_50 --bgfile ./background --motif GGTAGCS dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo50  status: 0  time: 0.651623
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_51 --bgfile ./background --motif CMTACTAC dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo51  status: 0  time: 0.65616
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_52 --bgfile ./background --motif TCCASCGA dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo52  status: 0  time: 0.659592
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_53 --bgfile ./background --motif AATCGCTS dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo53  status: 0  time: 0.658948
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_54 --bgfile ./background --motif Abf1p\&consensus=RTCAYxYSScACGA db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo54  status: 0  time: 1.119404
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_55 --bgfile ./background --motif Nrg2p\&consensus=MAGGGTCC db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo55  status: 0  time: 1.079058
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_56 --bgfile ./background --motif ATTACKG dreme_out/dreme.xml ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo56  status: 0  time: 0.656177
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_57 --bgfile ./background --motif Nrg2p\&consensus=GGtcBHAG db/YEAST/YEASTRACT_20130918.meme ./Fkh1_combined.fasta
+Finished invoke:
+  name: fimo57  status: 0  time: 1.081854
+Writing output
+Invoking:
+  meme-chip_html_to_tsv ./meme-chip.html ./summary.tsv "meme-chip -oc . -time 300 -ccut 100 -fdesc description -order 1 -db db/YEAST/YEASTRACT_20130918.meme -meme-mod zoops -meme-minw 6 -meme-maxw 30 -meme-nmotifs 3 -meme-searchsize 100000 -dreme-e 0.05 -centrimo-score 5.0 -centrimo-ethresh 10.0 Fkh1_combined.fasta" 5.0.2 "Thu Aug 30 14\:26\:08 2018 -0700"
+Finished invoke:
+  name: summary  status: 0  time: 2.131707
+Done

@@ -1,0 +1,13 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+Sut2p&consensus=gWCctgV	Sut2p	chrXII__687269__687279__YLR272C__YCS4__1.13636363636364__TTTACCTTT	102	108	+	8.36076	8.85e-05	1	GTCCTGC
+Sut2p&consensus=gWCctgV	Sut2p	chrVIII__470831__470841__YHR183W__GND1__1.1038961038961__GCTTGTTT	132	138	+	8.36076	8.85e-05	1	GTCCTGG
+Sut2p&consensus=gWCctgV	Sut2p	chrVIII__401213__401223__YHR152W__2.18	186	192	-	8.36076	8.85e-05	1	GACCTGC
+Sut2p&consensus=gWCctgV	Sut2p	chrVIII__401213__401223__YHR151C__2.18	186	192	-	8.36076	8.85e-05	1	GACCTGC
+Sut2p&consensus=gWCctgV	Sut2p	chrVIII__401198__401208__YHR152W__SPO12__4.77358490566038__GTTTACAT	201	207	-	8.36076	8.85e-05	1	GACCTGC
+Sut2p&consensus=gWCctgV	Sut2p	chrVIII__401198__401208__YHR151C__MTC6__4.77358490566038__GTTTACAT	201	207	-	8.36076	8.85e-05	1	GACCTGC
+Sut2p&consensus=gWCctgV	Sut2p	chrIV__1403267__1403277__YDR472W__1.12	229	235	-	8.36076	8.85e-05	1	GTCCTGC
+Sut2p&consensus=gWCctgV	Sut2p	chrIV__1403028__1403038__YDR472W__TRS31__2__CTTTTTTT	468	474	-	8.36076	8.85e-05	1	GTCCTGC
+
+# FIMO (Find Individual Motif Occurrences): Version 5.0.2 compiled on Aug 31 2018 at 01:15:04
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_11 --bgfile ./background --motif Sut2p&consensus=gWCctgV db/YEAST/YEASTRACT_20130918.meme ./Fkh2_log_peaks.fasta

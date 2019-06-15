@@ -1,0 +1,44 @@
+*** Error in `/home/meme/meme_5.0.2/bin/spamo': double free or corruption (fasttop): 0x00000000015dd670 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x2aed384157e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x2aed3841e37a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x2aed3842253c]
+/home/meme/meme_5.0.2/bin/spamo[0x4375dd]
+/home/meme/meme_5.0.2/bin/spamo[0x40621d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x2aed383be830]
+/home/meme/meme_5.0.2/bin/spamo[0x406469]
+======= Memory map: ========
+00400000-005b2000 r-xp 00000000 00:2c 1179661                            /home/meme/meme_5.0.2/bin/spamo
+007b1000-007b9000 r--p 001b1000 00:2c 1179661                            /home/meme/meme_5.0.2/bin/spamo
+007b9000-007bb000 rw-p 001b9000 00:2c 1179661                            /home/meme/meme_5.0.2/bin/spamo
+007bb000-00885000 rw-p 00000000 00:00 0 
+014e1000-01984000 rw-p 00000000 00:00 0                                  [heap]
+2aed37c50000-2aed37c76000 r-xp 00000000 ca:01 165208                     /lib/x86_64-linux-gnu/ld-2.23.so
+2aed37c76000-2aed37c79000 rw-p 00000000 00:00 0 
+2aed37c83000-2aed37c86000 rw-p 00000000 00:00 0 
+2aed37e75000-2aed37e76000 r--p 00025000 ca:01 165208                     /lib/x86_64-linux-gnu/ld-2.23.so
+2aed37e76000-2aed37e77000 rw-p 00026000 ca:01 165208                     /lib/x86_64-linux-gnu/ld-2.23.so
+2aed37e77000-2aed37e78000 rw-p 00000000 00:00 0 
+2aed37e78000-2aed37f80000 r-xp 00000000 ca:01 165233                     /lib/x86_64-linux-gnu/libm-2.23.so
+2aed37f80000-2aed3817f000 ---p 00108000 ca:01 165233                     /lib/x86_64-linux-gnu/libm-2.23.so
+2aed3817f000-2aed38180000 r--p 00107000 ca:01 165233                     /lib/x86_64-linux-gnu/libm-2.23.so
+2aed38180000-2aed38181000 rw-p 00108000 ca:01 165233                     /lib/x86_64-linux-gnu/libm-2.23.so
+2aed38181000-2aed38199000 r-xp 00000000 ca:01 165221                     /lib/x86_64-linux-gnu/libpthread-2.23.so
+2aed38199000-2aed38398000 ---p 00018000 ca:01 165221                     /lib/x86_64-linux-gnu/libpthread-2.23.so
+2aed38398000-2aed38399000 r--p 00017000 ca:01 165221                     /lib/x86_64-linux-gnu/libpthread-2.23.so
+2aed38399000-2aed3839a000 rw-p 00018000 ca:01 165221                     /lib/x86_64-linux-gnu/libpthread-2.23.so
+2aed3839a000-2aed3839e000 rw-p 00000000 00:00 0 
+2aed3839e000-2aed3855e000 r-xp 00000000 ca:01 165238                     /lib/x86_64-linux-gnu/libc-2.23.so
+2aed3855e000-2aed3875e000 ---p 001c0000 ca:01 165238                     /lib/x86_64-linux-gnu/libc-2.23.so
+2aed3875e000-2aed38762000 r--p 001c0000 ca:01 165238                     /lib/x86_64-linux-gnu/libc-2.23.so
+2aed38762000-2aed38764000 rw-p 001c4000 ca:01 165238                     /lib/x86_64-linux-gnu/libc-2.23.so
+2aed38764000-2aed38768000 rw-p 00000000 00:00 0 
+2aed38768000-2aed3877e000 r-xp 00000000 ca:01 165819                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+2aed3877e000-2aed3897d000 ---p 00016000 ca:01 165819                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+2aed3897d000-2aed3897e000 rw-p 00015000 ca:01 165819                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+2aed3c000000-2aed3c021000 rw-p 00000000 00:00 0 
+2aed3c021000-2aed40000000 ---p 00000000 00:00 0 
+7ffca1257000-7ffca1278000 rw-p 00000000 00:00 0                          [stack]
+7ffca1373000-7ffca1375000 r--p 00000000 00:00 0                          [vvar]
+7ffca1375000-7ffca1377000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]

@@ -1,0 +1,3145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:cis="http://zlab.bu.edu/schema/cisml" xmlns:fimo="http://noble.gs.washington.edu/schema/cisml" xmlns:mem="http://noble.gs.washington.edu/meme">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>FIMO Results</title>
+<style type="text/css">
+td.left {text-align: left;}
+td.right {text-align: right; padding-right: 1cm;}
+</style>
+</head>
+<body color="#000000">
+<a name="top_buttons"></a>
+<hr>
+<table summary="buttons" align="left" cellspacing="0">
+<tr>
+<td bgcolor="#00FFFF"><a href="#database_and_motifs"><b>Database and Motifs</b></a></td>
+<td bgcolor="#DDFFDD"><a href="#sec_i"><b>High-scoring Motif Occurences</b></a></td>
+<td bgcolor="#DDDDFF"><a href="#debugging_information"><b>Debugging Information</b></a></td>
+<td bgcolor="#FFDD00"><a href="fimo.tsv""><b>Results in TSV Format</b></a></td>
+<td bgcolor="#FFDDFF"><a href="fimo.gff""><b>Results in GFF3 Format</b></a></td>
+</tr>
+</table>
+<br/>
+<br/>
+<hr/>
+<center><big><b>FIMO - Motif search tool</b></big></center>
+<hr>
+<p>
+FIMO version 5.0.2, (Release date: Thu Aug 30 14:26:08 2018 -0700)
+</p>
+<p>
+For further information on how to interpret these results please access <a href="http://meme-suite.org//doc/fimo-output-format.html">http://meme-suite.org//doc/fimo-output-format.html</a>.<br>
+To get a copy of the FIMO software please access <a href="http://meme-suite.org">http://meme-suite.org</a>
+
+</p>
+<p>If you use FIMO in your research, please cite the following paper:<br>
+Charles E. Grant, Timothy L. Bailey, and William Stafford Noble,
+"FIMO: Scanning for occurrences of a given motif",
+<i>Bioinformatics</i>, <b>27</b>(7):1017-1018, 2011.
+<a href="http://bioinformatics.oxfordjournals.org/content/27/7/1017">[full text]</a></p>
+<hr>
+<center><big><b><a name="database_and_motifs">DATABASE AND MOTIFS</a></b></big></center>
+<hr>
+<div style="padding-left: 0.75in; line-height: 1em; font-family: monospace;">
+<p>
+  DATABASE ./Fkh1_combined.fasta
+  <br />
+  Database contains 1209 sequences, 605549 residues
+</p>
+<p>
+  MOTIFS dreme_out/dreme.xml (DNA)
+  <table>
+    <thead>
+      <tr>
+        <th style="border-bottom: 1px dashed;">MOTIF</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;">WIDTH</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;text-align:left;" >
+         BEST POSSIBLE MATCH
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:right;">RTAAAYA</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">GTAAACA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">MGAGAA</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">AGAGAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TCTTSAAA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">TCTTGAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">AGRAAG</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">AGAAAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">AACAANAA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">AACAAAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CGCAATTR</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">CGCAATTG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CAATGCS</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CAATGCG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TGTTGAYA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">TGTTGACA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">ACCCRG</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">ACCCAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">ASCTAAAC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">ACCTAAAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CCGCACWC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">CCGCACAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">AARAAAAA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">AAAAAAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">ATTKGCAC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">ATTGGCAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GTGATGA</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">GTGATGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TTCCCAAA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">TTCCCAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TCCCRAGA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">TCCCAAGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CAGCKGC</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CAGCTGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GTGGYA</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">GTGGCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">ACGCGCS</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">ACGCGCG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TTGCCTRA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">TTGCCTAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">ATATATAB</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">ATATATAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">SCCTTGA</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CCCTTGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">ATGMGAAC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">ATGAGAAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CCSTCAC</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CCGTCAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CATSAGC</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CATCAGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GGTAGCS</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">GGTAGCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CATAVCC</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CATAACC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CCATAK</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">CCATAT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GTATTCGA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">GTATTCGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CAAASCTC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">CAAACCTC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">AATAATAT</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">AATAATAT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CMTACTAC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">CCTACTAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TCCASCGA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">TCCACCGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GMAAACAA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">GAAAACAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GTGAARTA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">GTGAAATA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">AATCGCTS</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">AATCGCTC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">ATTACKG</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">ATTACTG</td>
+       </tr>
+    </tbody>
+  </table>
+</p>
+<p>
+Random model letter frequencies (./background):
+<br/>
+
+A 0.315 C 0.185 G 0.185 T 0.315 </p>
+</div>
+<hr>
+<center><big><b><a name="sec_i">SECTION I: HIGH-SCORING MOTIF OCCURENCES</a></b></big></center>
+<hr>
+<ul>
+<li>
+There were 253 motif occurences with a p-value less than 0.0001.
+
+The full set of motif occurences can be seen in the
+TSV (tab-delimited values) output file
+<a href="fimo.tsv">fimo.tsv</a>, 
+the GFF3 file 
+<a href="fimo.gff">fimo.gff</a> 
+which may be suitable for uploading to the 
+<a href="http://genome.ucsc.edu/cgi-bin/hgTables">UCSC Genome Table Browser</a>
+(assuming the FASTA input sequences included genomic coordinates in UCSC or Galaxy format),
+or the XML file 
+<a href="fimo.xml">fimo.xml</a>.
+</li>
+<li>
+The <i>p</i>-value of a motif occurrence is defined as the
+probability of a random sequence of the same length as the motif
+matching that position of the sequence with as good or better a score.
+</li>
+<li>
+The score for the match of a position in a sequence to a motif
+is computed by summing the appropriate entries from each column of
+the position-dependent scoring matrix that represents the motif.
+</li>
+<li>
+The q-value of a motif occurrence is defined as the
+false discovery rate if the occurrence is accepted as significant.
+</li>
+<li>The table is sorted by increasing <i>p</i>-value.</li>
+</ul>
+<table border="1">
+<thead>
+<tr>
+<th>Motif ID</th>
+<th>Alt ID</th>
+<th>Sequence Name</th>
+<th>Strand</th>
+<th>Start</th>
+<th>End</th>
+<th>p-value</th>
+<th>q-value</th>
+<th>Matched Sequence</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40682__40692__YBL097W__7.26923076923077</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">3</td>
+      <td style="text-align:left;">10</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40680__40690__YBL097W__3.76595744680851</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5</td>
+      <td style="text-align:left;">12</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40678__40688__YBL097W__BRN1__7.58928571428571__ATGTAAACAAAGAAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7</td>
+      <td style="text-align:left;">14</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40678__40688__YBL097W__BRN1__26.6666666666667__ATGTAAACAAAGAAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7</td>
+      <td style="text-align:left;">14</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40675__40687__YBL097W__0.00300898442794</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">9</td>
+      <td style="text-align:left;">16</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__119039__119049__YFL008W__1.21276595744681</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">44</td>
+      <td style="text-align:left;">51</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__486894__486904__YBR123C__1.5531914893617</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">70</td>
+      <td style="text-align:left;">77</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330369__330379__YER087W__1.03846153846154</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">71</td>
+      <td style="text-align:left;">78</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__370599__370609__YBR065C__1.32692307692308</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">71</td>
+      <td style="text-align:left;">78</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__486890__486900__YBR123C__TFC1__3.75__AAACTAAACATGAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">74</td>
+      <td style="text-align:left;">81</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__486890__486900__YBR123C__TFC1__2.61682242990654__AAACTAAACATGAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">74</td>
+      <td style="text-align:left;">81</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330358__330368__YER087W__AIM10__1.88659793814433__AAACAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">82</td>
+      <td style="text-align:left;">89</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330358__330368__YER087W__AIM10__1.25__AAACAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">82</td>
+      <td style="text-align:left;">89</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__199446__199456__YFR023W__PES4__17.8225806451613__TNTAAANAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">95</td>
+      <td style="text-align:left;">102</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__93679__93689__YEL030W__1.40425531914894</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">97</td>
+      <td style="text-align:left;">104</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__199413__199423__YFR023W__24.6346153846154</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">128</td>
+      <td style="text-align:left;">135</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__199413__199423__YFR023W__8.59574468085106</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">128</td>
+      <td style="text-align:left;">135</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__199400__199428__YFR023W__0.000705316701613</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">132</td>
+      <td style="text-align:left;">139</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__199409__199419__YFR023W__PES4__19.9067796610169__TAAATATAAACAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">132</td>
+      <td style="text-align:left;">139</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__199409__199419__YFR023W__PES4__51.9462365591398__TAAATATAAACAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">132</td>
+      <td style="text-align:left;">139</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__199406__199419__YFR023W__0.000765898551726</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">134</td>
+      <td style="text-align:left;">141</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__452371__452381__YDR002W__1.01923076923077</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">143</td>
+      <td style="text-align:left;">150</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214922__214932__YER032W__1.78846153846154</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">159</td>
+      <td style="text-align:left;">166</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214922__214932__YER031C__1.78846153846154</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">159</td>
+      <td style="text-align:left;">166</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__486803__486813__YBR123C__1.23076923076923</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">161</td>
+      <td style="text-align:left;">168</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214919__214929__YER032W__FIR1__2.14285714285714__ATGGTAAACAAAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">162</td>
+      <td style="text-align:left;">169</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214919__214929__YER031C__YPT31__5__ATGGTAAACAAAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">162</td>
+      <td style="text-align:left;">169</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214919__214929__YER032W__FIR1__5__ATGGTAAACAAAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">162</td>
+      <td style="text-align:left;">169</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__279857__279867__YCR092C__1.57692307692308</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">173</td>
+      <td style="text-align:left;">180</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__279857__279867__YCR093W__1.57692307692308</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">173</td>
+      <td style="text-align:left;">180</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__231382__231392__YLR042C__YLR042C__2.16666666666667__TAAACAAAG</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">174</td>
+      <td style="text-align:left;">181</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214864__214933__YER032W__0.0025275039917</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">188</td>
+      <td style="text-align:left;">195</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214864__214933__YER031C__0.0025275039917</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">188</td>
+      <td style="text-align:left;">195</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__370452__370462__YBR065C__ECM2__1.54304635761589__AAACAAG</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">218</td>
+      <td style="text-align:left;">225</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__231330__231340__YLR042C__1.53846153846154</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">226</td>
+      <td style="text-align:left;">233</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__614644__614654__YLR238W__1.29787234042553</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">243</td>
+      <td style="text-align:left;">250</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__614601__614611__YLR238W__FAR10__4.25568181818182__ATGGTAAACAAGT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">286</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__614601__614611__YLR238W__FAR10__3.81443298969072__ATGGTAAACAAGT</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">286</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__614598__614608__YLR238W__4.92307692307692</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">296</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__498880__498890__YER159C-A__2.30769230769231</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">438</td>
+      <td style="text-align:left;">445</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__498880__498890__YER160C__2.30769230769231</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">438</td>
+      <td style="text-align:left;">445</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__118627__118637__YFL008W__SMC1__1.95402298850575__TTTGTAAACACA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">456</td>
+      <td style="text-align:left;">463</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__118627__118637__YFL008W__SMC1__2__TTTGTAAACACA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">456</td>
+      <td style="text-align:left;">463</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__678273__678283__YGR097W__1.06382978723404</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">467</td>
+      <td style="text-align:left;">474</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__678267__678277__YGR097W__ASK10__1.69230769230769__GTAAACAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">473</td>
+      <td style="text-align:left;">480</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274011__1274021__YDR403W__DIT1__1.59090909090909__GTAAACATC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">5</td>
+      <td style="text-align:left;">12</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274011__1274021__YDR402C__DIT2__1.59090909090909__GTAAACATC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">5</td>
+      <td style="text-align:left;">12</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274011__1274021__YDR402C__DIT2__3__GTAAACATC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">5</td>
+      <td style="text-align:left;">12</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274011__1274021__YDR403W__DIT1__3__GTAAACATC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">5</td>
+      <td style="text-align:left;">12</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274009__1274019__YDR402C__4.19230769230769</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">7</td>
+      <td style="text-align:left;">14</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274009__1274019__YDR403W__4.19230769230769</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">7</td>
+      <td style="text-align:left;">14</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274008__1274020__YDR403W__0.00049610835872</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">7</td>
+      <td style="text-align:left;">14</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1274008__1274020__YDR402C__0.00049610835872</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">7</td>
+      <td style="text-align:left;">14</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904386__904396__YOR315W__SFG1__4.57692307692308__TGGTAAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">27</td>
+      <td style="text-align:left;">34</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904386__904396__YOR314W-A__YOR314W-A__4.57692307692308__TGGTAAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">27</td>
+      <td style="text-align:left;">34</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904386__904396__YOR315W__SFG1__3.70689655172414__TGGTAAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">27</td>
+      <td style="text-align:left;">34</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904386__904396__YOR314W-A__YOR314W-A__3.70689655172414__TGGTAAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">27</td>
+      <td style="text-align:left;">34</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904385__904395__YOR314W-A__8.27659574468085</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">28</td>
+      <td style="text-align:left;">35</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904385__904395__YOR315W__8.27659574468085</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">28</td>
+      <td style="text-align:left;">35</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__875030__875040__YPR165W__RHO1__1.40939597315436__GNAAACAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">57</td>
+      <td style="text-align:left;">64</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__875027__875037__YPR165W__1.51923076923077</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">60</td>
+      <td style="text-align:left;">67</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__795022__795032__YPR131C__NAT3__1.56462585034014__AAACAAGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">87</td>
+      <td style="text-align:left;">94</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__795022__795032__YPR131C__NAT3__1.17021276595745__AAACAAGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">87</td>
+      <td style="text-align:left;">94</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__687693__687703__YLR272C__1.70212765957447</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">123</td>
+      <td style="text-align:left;">130</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__298261__298271__YER070W__4.09615384615385</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">144</td>
+      <td style="text-align:left;">151</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__298257__298267__YER070W__RNR1__3.55__CGTAAACAAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">148</td>
+      <td style="text-align:left;">155</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__298257__298267__YER070W__RNR1__1.33571428571429__CGTAAACAAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">148</td>
+      <td style="text-align:left;">155</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__770190__770200__YOR230W__WTM1__5.10344827586207__ATTGTAAACATC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">213</td>
+      <td style="text-align:left;">220</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__770188__770198__YOR230W__4.71153846153846</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">215</td>
+      <td style="text-align:left;">222</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__770187__770199__YOR230W__0.000610914102188</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">215</td>
+      <td style="text-align:left;">222</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__140531__140541__snR190__SNR190__2.02898550724638__ATGTAAACAT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">235</td>
+      <td style="text-align:left;">242</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329319__329329__YPL116W__HOS3__9.50943396226415__ATTGTAAACAACT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">235</td>
+      <td style="text-align:left;">242</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__140531__140541__snR128__SNR128__2.02898550724638__ATGTAAACAT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">235</td>
+      <td style="text-align:left;">242</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329319__329329__YPL117C__IDI1__9.50943396226415__ATTGTAAACAACT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">235</td>
+      <td style="text-align:left;">242</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329319__329329__YPL116W__HOS3__8.53731343283582__ATTGTAAACAACT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">235</td>
+      <td style="text-align:left;">242</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329319__329329__YPL117C__IDI1__8.53731343283582__ATTGTAAACAACT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">235</td>
+      <td style="text-align:left;">242</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__794873__794883__YPR131C__1.51063829787234</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">236</td>
+      <td style="text-align:left;">243</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329306__329316__YPL116W__HOS3__13.0049504950495__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">248</td>
+      <td style="text-align:left;">255</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329306__329316__YPL117C__IDI1__13.0049504950495__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">248</td>
+      <td style="text-align:left;">255</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329289__329333__YPL116W__0.001646619497</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">248</td>
+      <td style="text-align:left;">255</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329289__329333__YPL117C__0.001646619497</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">248</td>
+      <td style="text-align:left;">255</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__794851__794861__YPR131C__1.53846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">258</td>
+      <td style="text-align:left;">265</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__140506__140516__snR190__1.65384615384615</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">260</td>
+      <td style="text-align:left;">267</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__140506__140516__snR128__1.65384615384615</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">260</td>
+      <td style="text-align:left;">267</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329291__329301__YPL116W__6.5531914893617</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">263</td>
+      <td style="text-align:left;">270</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329291__329301__YPL117C__6.5531914893617</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">263</td>
+      <td style="text-align:left;">270</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329289__329301__YPL117C__0.000710088112877</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">264</td>
+      <td style="text-align:left;">271</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329289__329301__YPL116W__0.000710088112877</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">264</td>
+      <td style="text-align:left;">271</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329290__329300__YPL116W__15.1730769230769</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">264</td>
+      <td style="text-align:left;">271</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329290__329300__YPL117C__15.1730769230769</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">264</td>
+      <td style="text-align:left;">271</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__517563__517573__YOR104W__2.53846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">272</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__517563__517573__YOR105W__2.53846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">272</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__517563__517573__YOR103C__2.53846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">272</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__517559__517569__YOR103C__OST2__4.53939393939394__TAAAAATAAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">276</td>
+      <td style="text-align:left;">283</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__517559__517569__YOR105W__YOR105W__4.53939393939394__TAAAAATAAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">276</td>
+      <td style="text-align:left;">283</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__517559__517569__YOR104W__PIN2__4.53939393939394__TAAAAATAAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">276</td>
+      <td style="text-align:left;">283</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248853__248863__YCR075W-A__6.51063829787234</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">281</td>
+      <td style="text-align:left;">288</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248853__248863__YCR075C__6.51063829787234</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">281</td>
+      <td style="text-align:left;">288</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248852__248864__YCR075C__0.000931894257843</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">281</td>
+      <td style="text-align:left;">288</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248852__248864__YCR075W-A__0.000931894257843</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">281</td>
+      <td style="text-align:left;">288</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248852__248862__YCR075W-A__7.73076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">282</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248852__248862__YCR075C__7.73076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">282</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329212__329333__YPL117C__0.00342813183164</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">287</td>
+      <td style="text-align:left;">294</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXVI__329212__329333__YPL116W__0.00342813183164</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">287</td>
+      <td style="text-align:left;">294</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248844__248854__YCR075W-A__YCR075W-A__5.96153846153846__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">290</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248844__248854__YCR075C__ERS1__5.96153846153846__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">290</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248844__248854__YCR075W-A__YCR075W-A__7.91411042944785__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">290</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__248844__248854__YCR075C__ERS1__7.91411042944785__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">290</td>
+      <td style="text-align:left;">297</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__439077__439087__YER135C__1.13461538461538</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">300</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__439077__439087__YER136W__1.13461538461538</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">300</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__439072__439082__YER136W__GDI1__2.07142857142857__AAACTAAACATGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">298</td>
+      <td style="text-align:left;">305</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__439072__439082__YER135C__YER135C__2.07142857142857__AAACTAAACATGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">298</td>
+      <td style="text-align:left;">305</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__439072__439082__YER136W__GDI1__1.71428571428571__AAACTAAACATGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">298</td>
+      <td style="text-align:left;">305</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__439072__439082__YER135C__YER135C__1.71428571428571__AAACTAAACATGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">298</td>
+      <td style="text-align:left;">305</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__297864__297874__YBR030W__RKM3__3.64238410596026__GTAAACAGNA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">305</td>
+      <td style="text-align:left;">312</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__297864__297874__YBR029C__CDS1__3.64238410596026__GTAAACAGNA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">305</td>
+      <td style="text-align:left;">312</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__297863__297873__YBR029C__2.98076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">306</td>
+      <td style="text-align:left;">313</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__297863__297873__YBR030W__2.98076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">306</td>
+      <td style="text-align:left;">313</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrI__73738__73748__YAL037W__YAL037W__1.78571428571429__TTTATAAANAANA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">306</td>
+      <td style="text-align:left;">313</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrI__73738__73748__YAL037C-A__YAL037C-A__1.78571428571429__TTTATAAANAANA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">306</td>
+      <td style="text-align:left;">313</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrI__73738__73748__YAL037C-B__YAL037C-B__1.78571428571429__TTTATAAANAANA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">306</td>
+      <td style="text-align:left;">313</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904070__904080__YOR315W__3.23076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">343</td>
+      <td style="text-align:left;">350</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904070__904080__YOR314W-A__3.23076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">343</td>
+      <td style="text-align:left;">350</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904061__904071__YOR315W__SFG1__4.05031446540881__TTTGTAAATAT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">352</td>
+      <td style="text-align:left;">359</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904061__904071__YOR314W-A__YOR314W-A__4.05031446540881__TTTGTAAATAT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">352</td>
+      <td style="text-align:left;">359</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904041__904075__YOR314W-A__0.000750744596985</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">360</td>
+      <td style="text-align:left;">367</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904041__904075__YOR315W__0.000750744596985</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">360</td>
+      <td style="text-align:left;">367</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904035__904045__YOR315W__SFG1__5.80625__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">378</td>
+      <td style="text-align:left;">385</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904035__904045__YOR314W-A__YOR314W-A__5.80625__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">378</td>
+      <td style="text-align:left;">385</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904035__904045__YOR315W__SFG1__3.13333333333333__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">378</td>
+      <td style="text-align:left;">385</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__904035__904045__YOR314W-A__YOR314W-A__3.13333333333333__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">378</td>
+      <td style="text-align:left;">385</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrI__73658__73668__YAL037C-A__1.08510638297872</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">386</td>
+      <td style="text-align:left;">393</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrI__73658__73668__YAL037C-B__1.08510638297872</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">386</td>
+      <td style="text-align:left;">393</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__559005__559015__YMR147W__1.05769230769231</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">388</td>
+      <td style="text-align:left;">395</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__559005__559015__YMR146C__1.05769230769231</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">388</td>
+      <td style="text-align:left;">395</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__559002__559012__YMR147W__YMR147W__1.54362416107383__TAAATATGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">391</td>
+      <td style="text-align:left;">398</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__559002__559012__YMR146C__TIF34__1.54362416107383__TAAATATGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">391</td>
+      <td style="text-align:left;">398</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__559002__559012__YMR147W__YMR147W__1.22222222222222__TAAATATGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">391</td>
+      <td style="text-align:left;">398</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__559002__559012__YMR146C__TIF34__1.22222222222222__TAAATATGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">391</td>
+      <td style="text-align:left;">398</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__158101__158111__YJL134W__LCB3__2.42028985507246__ATGTAAACAAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">399</td>
+      <td style="text-align:left;">406</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__158101__158111__YJL136C__RPS21B__2.42028985507246__ATGTAAACAAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">399</td>
+      <td style="text-align:left;">406</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__39532__39542__YCL050C__1.86538461538462</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">439</td>
+      <td style="text-align:left;">446</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__320117__320127__YHR103W__SBE22__2.04255319148936__TGGTAAACAT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">447</td>
+      <td style="text-align:left;">454</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__320116__320126__YHR103W__2.23076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">448</td>
+      <td style="text-align:left;">455</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__878305__878315__YOR299W__1.36170212765957</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">460</td>
+      <td style="text-align:left;">467</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__1036690__1036776__YOR373W__0.000456818028839</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">487</td>
+      <td style="text-align:left;">494</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__1036690__1036776__YOR372C__0.000456818028839</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">487</td>
+      <td style="text-align:left;">494</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.272</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTGAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__836580__836590__YGR169C__PUS6__1.52777777777778__TAAACAAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">44</td>
+      <td style="text-align:left;">51</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__836580__836590__YGR170W__PSD2__1.52777777777778__TAAACAAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">44</td>
+      <td style="text-align:left;">51</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__345739__345749__YHR118C__1.28846153846154</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">45</td>
+      <td style="text-align:left;">52</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__345739__345749__YHR119W__1.28846153846154</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">45</td>
+      <td style="text-align:left;">52</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__345738__345748__YHR119W__SET1__1.84397163120567__CGTAAACAAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">46</td>
+      <td style="text-align:left;">53</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__345738__345748__YHR118C__ORC6__1.84397163120567__CGTAAACAAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">46</td>
+      <td style="text-align:left;">53</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__547911__547921__YKR055W__1.02127659574468</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">58</td>
+      <td style="text-align:left;">65</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__361344__361354__YOR016C__ERP4__2.00689655172414__TATAAACAGG</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">76</td>
+      <td style="text-align:left;">83</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXV__361344__361354__YOR017W__PET127__1.40625__TATAAACAGG</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">76</td>
+      <td style="text-align:left;">83</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__39532__39542__YCL050C__1.86538461538462</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">133</td>
+      <td style="text-align:left;">140</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__429387__429397__YHR164C__DNA2__3.1063829787234__AAACAAGAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">146</td>
+      <td style="text-align:left;">153</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__429387__429397__YHR164C__2.67307692307692</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">146</td>
+      <td style="text-align:left;">153</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__836471__836481__YGR170W__1.11538461538462</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">153</td>
+      <td style="text-align:left;">160</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__836471__836481__YGR169C__1.11538461538462</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">153</td>
+      <td style="text-align:left;">160</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__480698__480708__YMR106C__YKU80__1.34228187919463__GGTAAATAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">155</td>
+      <td style="text-align:left;">162</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__119271__119281__YFL008W__1.40384615384615</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">219</td>
+      <td style="text-align:left;">226</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__91919__91929__YML089C__1.88461538461538</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">224</td>
+      <td style="text-align:left;">231</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__91919__91929__YML088W__1.88461538461538</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">224</td>
+      <td style="text-align:left;">231</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__91917__91927__YML088W__UFO1__1.60606060606061__AAACAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">226</td>
+      <td style="text-align:left;">233</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__91917__91927__YML089C__YML089C__1.60606060606061__AAACAAGA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">226</td>
+      <td style="text-align:left;">233</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__39435__39445__YCL050C__APA1__2.23423423423423__--------</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">230</td>
+      <td style="text-align:left;">237</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__39435__39445__YCL050C__APA1__3.89795918367347__--------</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">230</td>
+      <td style="text-align:left;">237</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__334405__334415__YGL093W__1.34042553191489</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">249</td>
+      <td style="text-align:left;">256</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__480588__480598__YMR106C__1.94230769230769</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">265</td>
+      <td style="text-align:left;">272</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__158101__158111__YJL134W__LCB3__2.42028985507246__ATGTAAACAAAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">283</td>
+      <td style="text-align:left;">290</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__158101__158111__YJL136C__RPS21B__2.42028985507246__ATGTAAACAAAC</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">283</td>
+      <td style="text-align:left;">290</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__214147__214209__YER032W__0.000293141857547</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">315</td>
+      <td style="text-align:left;">322</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__39316__39379__YCL050C__0.000449306054177</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">322</td>
+      <td style="text-align:left;">329</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__39329__39339__YCL050C__1.61702127659574</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">336</td>
+      <td style="text-align:left;">343</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__307177__307187__YKL069W__YKL069W__2.24299065420561__TATAAACATGAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">399</td>
+      <td style="text-align:left;">406</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__307177__307187__YKL069W__YKL069W__10.9395973154362__TATAAACATGAA</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">399</td>
+      <td style="text-align:left;">406</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__307175__307185__YKL069W__5.86538461538461</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">401</td>
+      <td style="text-align:left;">408</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__157967__157977__YJL134W__1.59615384615385</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">417</td>
+      <td style="text-align:left;">424</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__157967__157977__YJL136C__1.59615384615385</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">417</td>
+      <td style="text-align:left;">424</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVI__119039__119049__YFL008W__1.21276595744681</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">451</td>
+      <td style="text-align:left;">458</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__219132__219143__YHR059W__0.00184011426582</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">32</td>
+      <td style="text-align:left;">39</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__219132__219143__YHR057C__0.00184011426582</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">32</td>
+      <td style="text-align:left;">39</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__219132__219142__YHR059W__1.5</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">33</td>
+      <td style="text-align:left;">40</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVIII__219132__219142__YHR057C__1.5</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">33</td>
+      <td style="text-align:left;">40</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__820047__820057__YDR179C__1.06382978723404</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">57</td>
+      <td style="text-align:left;">64</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__465208__465218__YER148W__1.57446808510638</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">64</td>
+      <td style="text-align:left;">71</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__465208__465218__YER147C__1.57446808510638</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">64</td>
+      <td style="text-align:left;">71</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__465108__465118__YER147C__SCC4__1.89473684210526__AGTAAACAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">164</td>
+      <td style="text-align:left;">171</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__465108__465118__YER148W__SPT15__1.89473684210526__AGTAAACAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">164</td>
+      <td style="text-align:left;">171</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIII__262414__262424__YCR086W__1.23404255319149</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">176</td>
+      <td style="text-align:left;">183</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__722755__722765__YLR295C__ATP14__1.66666666666667__AAACAAGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">201</td>
+      <td style="text-align:left;">208</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXII__722755__722765__YLR294C__YLR294C__1.66666666666667__AAACAAGT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">201</td>
+      <td style="text-align:left;">208</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__501980__501990__YMR117C__SPC24__2.47787610619469__ATGTAAACAATG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">238</td>
+      <td style="text-align:left;">245</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__501980__501990__YMR117C__SPC24__11.0738255033557__ATGTAAACAATG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">238</td>
+      <td style="text-align:left;">245</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__501979__501989__YMR117C__1.61702127659574</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">239</td>
+      <td style="text-align:left;">246</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__501979__501989__YMR117C__7.23076923076923</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">239</td>
+      <td style="text-align:left;">246</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__733390__733400__YGR122W__1.28846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">260</td>
+      <td style="text-align:left;">267</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__733390__733400__YGR121W-A__1.28846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">260</td>
+      <td style="text-align:left;">267</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__733390__733400__YGR121C__1.28846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">260</td>
+      <td style="text-align:left;">267</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117024__1117034__YDR325W__YCG1__7.79141104294478__AGGTAAACAAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">270</td>
+      <td style="text-align:left;">277</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117024__1117034__YDR324C__UTP4__7.79141104294478__AGGTAAACAAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">270</td>
+      <td style="text-align:left;">277</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117022__1117032__YDR325W__3.28846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">272</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117022__1117032__YDR324C__3.28846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">272</td>
+      <td style="text-align:left;">279</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__501889__501989__YMR117C__0.000999439990845</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">284</td>
+      <td style="text-align:left;">291</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146021__146031__YML064C__11</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">296</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146014__146037__YML063W__0.000640315046099</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">296</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146021__146031__YML063W__17.4038461538462</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">296</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146021__146031__YML064C__17.4038461538462</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">296</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146021__146031__YML063W__11</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">296</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146014__146037__YML064C__0.000640315046099</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">289</td>
+      <td style="text-align:left;">296</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146017__146027__YML063W__RPS1B__29.2818791946309__AGGTAAACAAGAA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">300</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146017__146027__YML064C__TEM1__29.2818791946309__AGGTAAACAAGAA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">300</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146017__146027__YML063W__RPS1B__10.8125__AGGTAAACAAGAA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">300</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146017__146027__YML064C__TEM1__10.8125__AGGTAAACAAGAA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">293</td>
+      <td style="text-align:left;">300</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146014__146027__YML063W__0.000580727289979</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">295</td>
+      <td style="text-align:left;">302</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__146014__146027__YML064C__0.000580727289979</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">295</td>
+      <td style="text-align:left;">302</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330478__330488__YER087W__1.4468085106383</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">316</td>
+      <td style="text-align:left;">323</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330475__330485__YER087W__AIM10__1.53571428571429__AAACAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">319</td>
+      <td style="text-align:left;">326</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__449370__449380__YBR104W__4.01923076923077</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">343</td>
+      <td style="text-align:left;">350</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__449363__449386__YBR104W__0.00052110565933</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">344</td>
+      <td style="text-align:left;">351</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__449366__449376__YBR104W__YMC2__6.43046357615894__TTTGTAAACAAAGAAA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">347</td>
+      <td style="text-align:left;">354</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__733278__733288__YGR122W__YGR122W__1.72916666666667__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">372</td>
+      <td style="text-align:left;">379</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__733278__733288__YGR121W-A__YGR121W-A__1.72916666666667__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">372</td>
+      <td style="text-align:left;">379</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrVII__733278__733288__YGR121C__MEP1__1.72916666666667__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">372</td>
+      <td style="text-align:left;">379</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__46731__46741__YKL209C__STE6__2.5__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">381</td>
+      <td style="text-align:left;">388</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__46731__46741__YKL208W__1.4468085106383</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">381</td>
+      <td style="text-align:left;">388</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__46731__46741__YKL208W__CBT1__2.5__--------</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">381</td>
+      <td style="text-align:left;">388</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXI__46731__46741__YKL209C__1.4468085106383</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">381</td>
+      <td style="text-align:left;">388</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__423682__423692__YDL017W__CDC7__2.69285714285714__TGTCAACAAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">414</td>
+      <td style="text-align:left;">421</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__423682__423692__YDL018C__ERP3__2.69285714285714__TGTCAACAAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">414</td>
+      <td style="text-align:left;">421</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__423680__423690__YDL017W__2.61538461538462</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">416</td>
+      <td style="text-align:left;">423</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__423680__423690__YDL018C__2.61538461538462</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">416</td>
+      <td style="text-align:left;">423</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330369__330379__YER087W__1.03846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">425</td>
+      <td style="text-align:left;">432</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__533897__533908__YJR053W__0.00201960525456</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">427</td>
+      <td style="text-align:left;">434</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrX__533894__533904__YJR053W__BFA1__1.70068027210884__AATAAACAAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">430</td>
+      <td style="text-align:left;">437</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330358__330368__YER087W__AIM10__1.25__AAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">436</td>
+      <td style="text-align:left;">443</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrV__330358__330368__YER087W__AIM10__1.88659793814433__AAACAAGA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">436</td>
+      <td style="text-align:left;">443</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__621922__621932__YDR089W__1.17021276595745</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">442</td>
+      <td style="text-align:left;">449</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__621915__621925__YDR089W__YDR089W__1.93548387096774__ATAAACAAAG</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">449</td>
+      <td style="text-align:left;">456</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117024__1117034__YDR325W__YCG1__7.79141104294478__AGGTAAACAAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">458</td>
+      <td style="text-align:left;">465</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117024__1117034__YDR324C__UTP4__7.79141104294478__AGGTAAACAAAC</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">458</td>
+      <td style="text-align:left;">465</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117022__1117032__YDR325W__3.28846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">460</td>
+      <td style="text-align:left;">467</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrIV__1117022__1117032__YDR324C__3.28846153846154</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">460</td>
+      <td style="text-align:left;">467</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40675__40737__YBL097W__0.00199649357711</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">466</td>
+      <td style="text-align:left;">473</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__145843__145853__YML063W__RPS1B__1.59060402684564__AGNAAACAAT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">467</td>
+      <td style="text-align:left;">474</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrXIII__145843__145853__YML063W__RPS1B__1.27083333333333__AGNAAACAAT</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">467</td>
+      <td style="text-align:left;">474</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40682__40692__YBL097W__7.26923076923077</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">485</td>
+      <td style="text-align:left;">492</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40680__40690__YBL097W__3.76595744680851</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">487</td>
+      <td style="text-align:left;">494</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40678__40688__YBL097W__BRN1__26.6666666666667__ATGTAAACAAAGAAA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">489</td>
+      <td style="text-align:left;">496</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40678__40688__YBL097W__BRN1__7.58928571428571__ATGTAAACAAAGAAA</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">489</td>
+      <td style="text-align:left;">496</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TCTTSAAA</td>
+      <td style="text-align:left;">DREME-3</td>
+      <td style="text-align:left;">chrII__40675__40687__YBL097W__0.00300898442794</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">491</td>
+      <td style="text-align:left;">498</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.316</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTTCAAA</td>
+   </tr>
+</tbody>
+</table>
+
+<hr>
+<center><big><b><a name="debugging_information">DEBUGGING INFORMATION</a></b></big></center>
+<hr>
+<p>
+Command line:
+</p>
+<pre>
+fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_13 --bgfile ./background --motif TCTTSAAA dreme_out/dreme.xml ./Fkh1_combined.fasta
+</pre>
+<p>
+Settings:
+</p>
+<pre>
+<table>
+  <tr>
+    <td style="padding-right: 2em">output_directory = fimo_out_13</td>
+    <td style="padding-left: 5em; padding-right: 2em">MEME file name = dreme_out/dreme.xml</td>
+    <td style="padding-left: 5em; padding-right: 2em">sequence file name = ./Fkh1_combined.fasta</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">background file name = ./background</td>
+    <td style="padding-left: 5em; padding-right: 2em">alphabet = DNA</td>
+    <td style="padding-left: 5em; padding-right: 2em">max stored scores = 100000</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">allow clobber = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">compute q-values = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">parse genomic coord. = true</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">text only = false</td>
+    <td style="padding-left: 5em; padding-right: 2em">scan both strands = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">max strand = false</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">threshold type = p-value</td>
+    <td style="padding-left: 5em; padding-right: 2em">output theshold = 0.0001</td>
+    <td style="padding-left: 5em; padding-right: 2em">pseudocount = 0.1</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">alpha = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em">verbosity = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em"></td>
+  </tr>
+
+</table>
+</pre>
+<p>
+This information can be useful in the event you wish to report a
+problem with the FIMO software.
+</p>
+<hr>
+<span style="background-color: #DDDDFF"><a href="#top_buttons"><b>Go to top</b></a></span>
+</body>
+</html>
