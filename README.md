@@ -9,7 +9,7 @@ The article is currently in revision. A link to the full article will appear her
 
 The "Data" folder contains the raw experimental data, the processed experimental data (GEM, MACE and maxPeak), binding motif analysis (MEME, DREME and CentriMo), a version of the SQL database from [GEMMER](http://gemmer.barberislab.com) and data from the literature we have used in our analysis.
 
-The "Code" folder contains all Python code in Jupyter notebooks and R scripts to generate to figures and tables presented in the manuscript starting from the "Data" folder. 
+The "Code" folder contains all Python code in Jupyter notebooks and R scripts to generate the figures and tables presented in the text starting from the files in the "Data" folder. 
 
 The output of the scripts and notebooks in the "Code" folder is saved in the "Figures" and "Tables" folders. Only these outputs were used for the figures and tables presented in the manuscript and the Supplementary material. 
 
@@ -21,6 +21,4 @@ The "maxPeak_PDM" folder contains a fully functional R script illustrating the u
 
 # Reproduce our analysis offline and in the cloud
 
-Most of the analysis covered in the publication is reproducible using the jupyter notebooks of Python code in this repository through Binder or by downloading the files and using your local Python installation. To start, click the "Binder" button above. From there navigate to the "Code" folder and you will be able to execute the various Jupyter notebooks. 
-
-To reproduce the rest of the analysis simply use the .py and .r scripts in the "Code" and "Data" folders on your personal computer. 
+Most of the analysis covered in the publication is reproducible using the Jupyter notebooks containing Python code in this repository through [Binder](https://mybinder.org). Alternatively, you can download the files and run them using your local Python and R installations. To start, click the "Binder" button above. From there navigate to the "Code" folder and you will be able to execute the various Jupyter notebooks. To reproduce the rest of the analysis simply use the .py and .r scripts in the "Code" and "Data" folders on your personal computer. 
