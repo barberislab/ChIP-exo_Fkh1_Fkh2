@@ -1,2 +1,9 @@
-# Data
+# Explanation of the Data folder contents
 
+* The "ORF" folder contains the processed ChIP-exo data using GEM, MACE and maxPeak across the 2 TFs and 2 conditions (logarithmic and stationary)
+* The "wig_files" folder contains the raw .wig files that served as input to the maxPeak method.
+* The "binding_motif_analysis" folder contains the output of running the MEME suite on the combined targets in logarithmic and stationary phase for each forkhead. 
+* The "MacIsaac_et_al_2006", "Ostrow_et_al_2014" and "Venters_et_al_2011" folders contain literature data from the respective papers. We used this data to find and compare the targets identified by these studies.
+
+* The SCEPTRANS_correlation.xlsx contains the correlation analysis we performed of the Fkh target genes we identified through the SCEPTRANS database.
+* The Python scripts "" and "" are to be execute subsequently. They use the GEMMER SQL database as input. This file is too big to be uploaded on Github but is available on request. Running these Python scripts generates the "DB_GEMMER_20180731" and "df_ORF_condition_normalized" pickled Pandas dataframes and ultimately the "df_ORF_condition_normalized.xlsx". The latter Excel file and pickled dataframe are used as input to most of the subsequent analyses. This dataframe summarizes all the information from the literature and ChIP-exo about all ORFs in the budding yeast genome.

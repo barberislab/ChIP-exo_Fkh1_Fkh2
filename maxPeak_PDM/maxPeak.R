@@ -70,6 +70,7 @@ for (datIn in names(inFiles)) {
       countsTmp = wigDat[[datIn]][[chr]][wigDat[[datIn]][[chr]][,"track"] %in% 
                                            as.character(genome[[chr]][[gen]][["prom"]]),,drop=F]
       if (nrow(countsTmp)>0) {
+        # find maximum read count bp, round and calculate the median to obtain a single location if multiple bp have the same number of reads
         peakPos = round(median(as.numeric(countsTmp[as.numeric(countsTmp[,2])==max(as.numeric(countsTmp[,2])),1])))
         maxPeak[[datIn]] = rbind(maxPeak[[datIn]],cbind("Chromosome"=chr,
                                                         "peak-5"=peakPos-5,
