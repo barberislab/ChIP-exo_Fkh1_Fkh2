@@ -3,4 +3,5 @@ numpy
 roman
 matplotlib
 openpyxl
+xlsxwriter
 jupyter_contrib_nbextensions
