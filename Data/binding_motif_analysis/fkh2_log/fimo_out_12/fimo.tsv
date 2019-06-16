@@ -1,4 +1,0 @@
-
-# FIMO (Find Individual Motif Occurrences): Version 5.0.2 compiled on Aug 31 2018 at 01:15:04
-# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
-# fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_12 --bgfile ./background --motif Msn2p&consensus=agGgRB db/YEAST/YEASTRACT_20130918.meme ./Fkh2_log_peaks.fasta
