@@ -46,7 +46,6 @@ df = pd.read_pickle('DB_GEMMER_20180731')
 
 # All files share the same structure: column 4 (3 with zero indexing) is the gene name and 4 the quantification
 
-# for the EBICB manuscript we use ORF and include loessPeak and OL7, OL10, AD7 and AD10
 if promoter == 'ORF/':
     filenames = [ 
     'maxPeak_AD_12_Fkh1_log.bed', 'maxPeak_AD_12_Fkh1_stat.bed', 'maxPeak_AD_12_Fkh2_log.bed', 'maxPeak_AD_12_Fkh2_stat.bed',
