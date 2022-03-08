@@ -3,7 +3,7 @@
 # ChIP-exo analysis highlights Fkh1 and Fkh2 transcription factors as hubs that integrate multi-scale networks in budding yeast
 This repository contains all experimental and computational data and the subsequent outputs for the publication titled "ChIP-exo analysis highlights Fkh1 and Fkh2 transcription factors as hubs that integrate multi-scale networks in budding yeast" by Thierry D.G.A. Mondeel, Petter Holland, Jens Nielsen and Matteo Barberis. 
 
-The article is currently in revision. A link to the full article will appear here once it is accepted and publicly available.
+[Click here for the published article](https://doi.org/10.1093/nar/gkz603)
 
 # Repository organization
 
